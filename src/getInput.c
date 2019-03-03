@@ -4,7 +4,7 @@
 
 
 int main(int argc, char *argv[]) {
-  if (argc != 2 || (strncmp(argv[1], "RANKSUIT", 4) != 0 && strncmp(argv[1], "NUMERICAL", 9) != 0 )) {
+  if (argc != 2 || (strncmp(argv[1], "RANKSUIT", 8) != 0 && strncmp(argv[1], "NUMERICAL", 9) != 0 )) {
     printf("Usage: ./faro_shuffle RANKSUIT||NUMERICAL\n");
     exit(-1);
   } else {
