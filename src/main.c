@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "headers.h"
+#include "files/print_faro_val.h"
 
 
 
@@ -23,7 +24,13 @@ int main(int argc, char *argv[]) {
   if (pos_k > size) { // if the given position is larger than the number of cards it gets remainder and takes that as the position.
     pos_k = pos_k % size;
   }
-  Card* Deck = get_cards();
+  Card* deck = get_cards(size);
+  print_deck(deck, size);
+  // print_faro_val("", PREFIX_IN);
+  // print_faro_val("AC\0", CARD_VAL);
+  // print_faro_val("", SUFFIX);
+
+
 
 
 
