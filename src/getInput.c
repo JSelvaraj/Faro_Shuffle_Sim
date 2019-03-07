@@ -10,7 +10,7 @@
 /* This function reads in a number rank, suit values = to size and returns the
 head of a linked list of the deck of cards*/
 
-Card* get_cards() {
+Card* get_cards(int size) {
   Card* head;
   Card* current_node;
   head = NULL;
@@ -26,6 +26,7 @@ Card* get_cards() {
       current_node->next = new_node;
       current_node = current_node->next;
     }
-  } while (fgetc(stdin) != EOF);
+    size--;
+  } while (size>0);
   return head;
 }
