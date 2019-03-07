@@ -2,7 +2,7 @@
  * @file print_faro_val.h
  * @author Marwan Fayed
  * @last_rev 22/02/2019
- * 
+ *
  * @brief stacscheck-compliant output function for Faro Shuffle practical.
  */
 
@@ -17,7 +17,7 @@ typedef enum stringplace {PREFIX_START, PREFIX_IN, PREFIX_OUT, CARD_VAL, SUFFIX}
 
 /**
  * @brief Function to generate stacscheck-compliant output.
- * 
+ *
  * This function called once per data-item. There are (2+deck_size) calls
  *  needed to output a deck's data. For example, 52 cards consists of:
  *     - one call for output type (PREFIX_START, PREFIX_IN, PREFIX_OUT)
@@ -27,9 +27,9 @@ typedef enum stringplace {PREFIX_START, PREFIX_IN, PREFIX_OUT, CARD_VAL, SUFFIX}
  *     print_faro_val("", PREFIX_IN); // outputs " IN: "
  *     print_faro_val(card_val, CARD_VAL); // eg. if card_val <-- "5H\0", outputs "5H "
  *     print_faro_val("", SUFFIX);    // OUTPUTS "EoD\n"
- * 
+ *
  * @param string A pointer to a string of data (valid w/ CARD_VAL, otherwise ignored).
- * @param output_type Enumerated type (above). Determines type of output. 
+ * @param output_type Enumerated type (above). Determines type of output.
  *                    Only CARD_VAL outputs preceding string param.
  * @return void
  */
