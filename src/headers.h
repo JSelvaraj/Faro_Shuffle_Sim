@@ -1,8 +1,10 @@
-
-
-
-typedef struct {
+typedef struct Card Card;
+struct Card {
   char rank;
   char suit;
-  struct Card* next;
-} Card;
+  Card *next;
+};
+
+
+
+Card* get_cards(int size);
