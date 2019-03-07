@@ -16,13 +16,13 @@ Card* get_cards(int size) {
   Card *new_node;
   fgetc(stdin);
   for (int i = 0; i < size; i++) {
-    printf("I am here\n");
+    // printf("I am here\n");
     new_node = malloc(sizeof(Card));
     new_node->rank = fgetc(stdin);
     new_node->suit = fgetc(stdin);
     new_node->next = malloc(sizeof(Card));
-    printf("%d\n", new_node->rank);
-    printf("%d\n", new_node->suit);
+    // printf("%c\n", new_node->rank);
+    // printf("%c\n", new_node->suit);
     if (head == NULL) {
       head = new_node;
       current_node = new_node;
@@ -34,6 +34,6 @@ Card* get_cards(int size) {
       fgetc(stdin);
     }
   }
-  printf("here\n");
+  // printf("here\n");
   return head;
 }

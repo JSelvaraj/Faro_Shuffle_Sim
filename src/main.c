@@ -23,8 +23,8 @@ int main(int argc, char *argv[]) {
   if (pos_k > size) { // if the given position is larger than the number of cards it gets remainder and takes that as the position.
     pos_k = pos_k % size;
   }
-  printf("%d\n",size);
-    printf("%d\n",pos_k);
+  // printf("%d\n",size);
+  // printf("%d\n",pos_k);
   Card* deck = get_cards(size);
   print_deck(deck, size);
 
