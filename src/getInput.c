@@ -1,12 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "headers.h"
-
-
-
-
-
 /* This function reads in a number rank, suit values = to size and returns the
 head of a linked list of the deck of cards*/
 

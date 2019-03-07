@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "files/print_faro_val.h"
 
 typedef struct Card Card;  // print_faro_val("", PREFIX_IN);
