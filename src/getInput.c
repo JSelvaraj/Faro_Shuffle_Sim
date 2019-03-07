@@ -10,11 +10,11 @@
 /* This function reads in a number rank, suit values = to size and returns the
 head of a linked list of the deck of cards*/
 
-Card* get_cards(int size) {
-  Card* head; 
+Card* get_cards() {
+  Card* head;
   Card* current_node;
   head = NULL;
-   do {
+  do {
     Card *new_node = malloc(sizeof(Card));
     new_node->rank = (char) fgetc(stdin);
     new_node->suit = (char) fgetc(stdin);

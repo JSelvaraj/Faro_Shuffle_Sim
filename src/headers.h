@@ -7,4 +7,4 @@ struct Card {
 
 
 
-Card* get_cards(int size);
+Card* get_cards();
