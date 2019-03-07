@@ -13,12 +13,16 @@ head of a linked list of the deck of cards*/
 Card* get_cards(int size) {
   Card* head;
   Card* current_node;
-  head = NULL;
-  do {
-    Card *new_node = malloc(sizeof(Card));
-    new_node->rank = (char) fgetc(stdin);
-    new_node->suit = (char) fgetc(stdin);
-    new_node->next = NULL;
+  Card *new_node;
+  fgetc(stdin);
+  for (int i = 0; i < size; i++) {
+    printf("I am here\n");
+    new_node = malloc(sizeof(Card));
+    new_node->rank = fgetc(stdin);
+    new_node->suit = fgetc(stdin);
+    new_node->next = malloc(sizeof(Card));
+    printf("%d\n", new_node->rank);
+    printf("%d\n", new_node->suit);
     if (head == NULL) {
       head = new_node;
       current_node = new_node;
@@ -26,7 +30,10 @@ Card* get_cards(int size) {
       current_node->next = new_node;
       current_node = current_node->next;
     }
-    size--;
-  } while (size>0);
+    if (i < (size -1)) {
+      fgetc(stdin);
+    }
+  }
+  printf("here\n");
   return head;
 }
