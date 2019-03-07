@@ -3,14 +3,17 @@
 #include <string.h>
 #include "headers.h"
 #include "files/print_faro_val.h"
+
 /*
 @brief This function prints the deck of cards if when its a linked list
 */
-
-void print_deck(Card* deck, int size) {
+void print_deck(Card* deck, int size, Stringplace prefix) {
   Card* current_node = deck;
-  char card[3] = {"","","\0"};
-  print_faro_val("", PREFIX_IN);
+  char card[3];
+  card[0] = (char) "";
+  card[1] = (char) "";
+  card[2] = (char) NULL; //the cast is to remove the warning
+  print_faro_val("", prefix);
   while (size > 0) {
     card[0] = current_node->rank;
     card[1] = current_node->suit;

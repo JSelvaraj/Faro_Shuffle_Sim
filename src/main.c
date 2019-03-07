@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "headers.h"
-
+#include "files/print_faro_val.h"
 
 
 int main(int argc, char *argv[]) {
@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
   // printf("%d\n",size);
   // printf("%d\n",pos_k);
   Card* deck = get_cards(size);
-  print_deck(deck, size);
+  print_deck(deck, size, PREFIX_OUT);
 
 
 
