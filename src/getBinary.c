@@ -1,5 +1,5 @@
 #include "headers.h"
-#include <math.h>
+#include <Math.h>
 
 /*
 @brief This function converts a decimal number to its binary representation
