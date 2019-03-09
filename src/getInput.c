@@ -1,6 +1,11 @@
 #include "headers.h"
-/* This function reads in a number rank, suit values = to size and returns the
-head of a linked list of the deck of cards*/
+/*
+@brief This function reads in a number rank, suit values = to 'size' and returns the
+head of a linked list of the deck of cards
+
+@param size the number of values being read in.
+
+*/
 
 Card* get_cards(int size) {
   Card* head;
