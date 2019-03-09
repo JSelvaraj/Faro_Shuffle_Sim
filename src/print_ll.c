@@ -5,7 +5,12 @@
 #include "files/print_faro_val.h"
 
 /*
-@brief This function prints the deck of cards if when its a linked list
+@brief This function prints the deck of cards when its a linked list
+
+@param deck the linked list of Cards being printed
+@param size the length of the linked list 'deck'
+@param prefix whether an IN shuffle or OUT shuffle was performed.
+
 */
 void print_deck(Card* deck, int size, Stringplace prefix) {
   Card* current_node = deck;

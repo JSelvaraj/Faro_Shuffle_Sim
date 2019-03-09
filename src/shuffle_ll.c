@@ -21,6 +21,7 @@ Card* split(Card* deck, int size) {
   }
   Card* bottom_half = current_node->next;
   current_node->next = NULL;
+  print_deck(shuffle(deck,bottom_half), size, PREFIX_IN )
   return bottom_half;
 }
 
@@ -36,8 +37,6 @@ Card* split(Card* deck, int size) {
   @return new_deck the linked list made by interweaving the top and bot linked
   lists.
 */
-
-
 Card* shuffle(Card* top, Card* bot) {
   Card* new_deck = top;
   Card* current_node = top;
