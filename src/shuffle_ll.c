@@ -49,8 +49,8 @@ Card* shuffle(Card* top, Card* bot, int size) {
   current_node->next = bot_ptr;
   current_node = current_node->next;
   printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
+  size -= 2;
   while (size > 0) {
-
     bot_ptr = bot_ptr->next;
     current_node->next = top_ptr;
     top_ptr = top_ptr->next;
