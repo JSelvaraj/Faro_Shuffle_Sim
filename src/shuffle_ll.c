@@ -60,6 +60,7 @@ Card* shuffle(Card* top, Card* bot, int size) {
     current_node = current_node->next;
     printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
     size -= 2;
+    printf("%d\n", size);
   }
   return new_deck;
 }
