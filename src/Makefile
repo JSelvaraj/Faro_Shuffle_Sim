@@ -1,5 +1,5 @@
-all:main.o faro_ll.o files/print_faro_val.o
-	clang main.o faro_ll.o files/print_faro_val.o -o test
+all:main.o faro_ll.o files/print_faro_val.o getBinary.o
+	clang main.o faro_ll.o files/print_faro_val.o getBinary.o -o test
 
 all2: main.o getInput.o print_ll.o files/print_faro_val.o shuffle_ll.o
 	clang main.o getInput.o print_ll.o files/print_faro_val.o shuffle_ll.o -o test
@@ -7,16 +7,19 @@ all2: main.o getInput.o print_ll.o files/print_faro_val.o shuffle_ll.o
 main.o: main.c headers.h
 	clang main.c -c
 
-getInput.o: getInput.c headers.h
-	clang getInput.c -c
-
-print_ll.o: print_ll.c headers.h
-	clang print_ll.c -c
-shuffle_ll.o: shuffle_ll.c headers.h
-	clang shuffle_ll.c -c
+# getInput.o: getInput.c headers.h
+# 	clang getInput.c -c
+#
+# print_ll.o: print_ll.c headers.h
+# 	clang print_ll.c -c
+# shuffle_ll.o: shuffle_ll.c headers.h
+# 	clang shuffle_ll.c -c
 
 faro_ll.o: faro_ll.c headers.h
 	clang faro_ll.c -c
+
+getBinary.o: getBinary.c headers.h
+	clang getBinary.c -c
 
 clean:
 	rm *.o
