@@ -42,18 +42,24 @@ Card* split(Card* deck, int size) {
 Card* shuffle(Card* top, Card* bot) {
   Card* new_deck = top;
   Card* current_node = top;
+  printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
   Card* top_ptr = top;
   Card* bot_ptr = bot;
   top_ptr = top_ptr->next;
   current_node->next = bot_ptr;
   current_node = current_node->next;
+  printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
   while (current_node->next != NULL) {
+
     bot_ptr = bot_ptr->next;
     current_node->next = top_ptr;
     top_ptr = top_ptr->next;
     current_node = current_node->next;
+    printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
     current_node->next = bot_ptr;
     current_node = current_node->next;
+    printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
+
   }
   return new_deck;
 }
