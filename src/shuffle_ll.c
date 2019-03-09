@@ -21,7 +21,7 @@ Card* split(Card* deck, int size) {
   }
   Card* bottom_half = current_node->next;
   current_node->next = NULL;
-  print_deck(deck, size/2, PREFIX_IN);
+  print_deck(deck, size-1, PREFIX_IN);
     // print_deck(bottom_half, size/2, PREFIX_IN);
   return bottom_half;
 }
