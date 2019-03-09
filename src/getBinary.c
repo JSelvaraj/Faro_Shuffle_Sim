@@ -12,7 +12,7 @@ significant bit stored last and least significant stored first)
 */
 
 int* decToBinary(int number, int* length) {
-  double k_lenght = 0;
+  double k_length = 0;
   k_length = log10(number)/log10(2);
   *length = k_length;
   int* binary = malloc(sizeof(int) * *length);
