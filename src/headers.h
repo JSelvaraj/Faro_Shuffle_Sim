@@ -3,7 +3,7 @@
 #include <string.h>
 #include "files/print_faro_val.h"
 
-typedef struct Card Card; 
+typedef struct Card Card;
 struct Card {
   char rank;
   char suit;
@@ -12,5 +12,5 @@ struct Card {
 
 Card* get_cards(int size);
 void print_deck(Card* deck, int size, Stringplace prefix);
-Card* shuffle(Card* top, Card* bot);
+Card* shuffle(Card* top, Card* bot,int size);
 Card* split(Card* deck, int size);

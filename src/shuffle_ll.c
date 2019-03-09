@@ -21,7 +21,7 @@ Card* split(Card* deck, int size) {
   }
   Card* bottom_half = current_node->next;
   current_node->next = NULL;
-  print_deck(shuffle(deck, bottom_half), size, PREFIX_IN);
+  print_deck(shuffle(deck, bottom_half, size), size, PREFIX_IN);
   // print_deck(deck, size/2, PREFIX_IN);
   // print_deck(bottom_half, size/2, PREFIX_IN);
   return bottom_half;
@@ -39,7 +39,7 @@ Card* split(Card* deck, int size) {
   @return new_deck the linked list made by interweaving the top and bot linked
   lists.
 */
-Card* shuffle(Card* top, Card* bot) {
+Card* shuffle(Card* top, Card* bot, int size) {
   Card* new_deck = top;
   Card* current_node = top;
   printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
@@ -49,7 +49,7 @@ Card* shuffle(Card* top, Card* bot) {
   current_node->next = bot_ptr;
   current_node = current_node->next;
   printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
-  while (current_node->next != NULL) {
+  while (size > 0) {
 
     bot_ptr = bot_ptr->next;
     current_node->next = top_ptr;
@@ -59,7 +59,7 @@ Card* shuffle(Card* top, Card* bot) {
     current_node->next = bot_ptr;
     current_node = current_node->next;
     printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
-
+    size -= 2
   }
   return new_deck;
 }
