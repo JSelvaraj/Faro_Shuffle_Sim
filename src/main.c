@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
   // printf("%d\n",pos_k);
   Card* deck = get_cards(size);
   print_deck(deck, size, PREFIX_OUT);
-  split(deck, size);
+  split(&deck, size);
 
 
 
