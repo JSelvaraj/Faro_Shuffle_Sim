@@ -117,3 +117,30 @@ void print_deck(Card* deck, int size, Stringplace prefix) {
   }
   print_faro_val("", SUFFIX);
 }
+
+
+/**
+@brief This function handles the faro shuffle by calling the other
+functions.
+
+@param deck is the deck of cards to be shuffled
+@param size is the length of the deck
+@param k_binary is the binary representation of the position k
+specified by the user.
+@param k_length is the length of the binary k
+
+@return void
+*/
+void faro(Card* deck,int size, int* k_binary, int k_length) {
+  Card* bottom_half = NULL;
+  for (int i = k_length - 1; i >= 0; i--) {
+    bottom_half = split(deck, size);
+    if (k_binary == 1) {
+      deck = shuffle(bottom_half, deck, size);
+      print_deck(deck, size, PREFIX_IN);
+    } else {
+      deck = shuffle(deck, bottom_half, size);
+      print_deck(deck, size, PREFIX_OUT);
+    }
+  }
+}

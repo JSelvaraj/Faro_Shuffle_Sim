@@ -22,12 +22,9 @@ int main(int argc, char *argv[]) {
   // printf("%d\n",size);
   // printf("%d\n",pos_k);
   Card* deck = get_cards(size);
-  print_deck(deck, size, PREFIX_OUT);
-  split(deck, size);
-
-
-
-
+  int k_length = 0;
+  int* k_binary = decToBinary(pos_k, &k_length);
+  faro(deck, size, k_binary, k_length);
 
 
 }
