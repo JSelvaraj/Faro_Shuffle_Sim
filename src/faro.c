@@ -33,31 +33,6 @@ Card* get_cards(int size) {
   // printf("here\n");
   return head;
 }
-
-/*
-@brief This function iterates through a linked list and splits it at the halfway point.
-then it returns the bottom half of the list.
-
-@param deck the linked list representing the deck of cards. Half of the deck is
-split into a new linked list.
-@param size the size of the deck of cards.
-
-@return bottom_half the bottom half of the 'deck' linked list.
-*/
-Card* split(Card* deck, int size) {
-  int mid = size/2;
-  Card* current_node = deck;
-  for (int i = 0; i < mid -1; i++) {
-    current_node = current_node->next;
-  }
-  Card* bottom_half = current_node->next;
-  current_node->next = NULL;
-  print_deck(shuffle(deck, bottom_half, size), size, PREFIX_IN);
-  // print_deck(deck, size/2, PREFIX_IN);
-  // print_deck(bottom_half, size/2, PREFIX_IN);
-  return bottom_half;
-}
-
 /**
   @brief This function interweaves two equal length linked lists. Taking one
   node from top then from bottom, repeated until the end of the linked lists.
@@ -95,7 +70,29 @@ Card* shuffle(Card* top, Card* bot, int size) {
   }
   return new_deck;
 }
+/*
+@brief This function iterates through a linked list and splits it at the halfway point.
+then it returns the bottom half of the list.
 
+@param deck the linked list representing the deck of cards. Half of the deck is
+split into a new linked list.
+@param size the size of the deck of cards.
+
+@return bottom_half the bottom half of the 'deck' linked list.
+*/
+Card* split(Card* deck, int size) {
+  int mid = size/2;
+  Card* current_node = deck;
+  for (int i = 0; i < mid -1; i++) {
+    current_node = current_node->next;
+  }
+  Card* bottom_half = current_node->next;
+  current_node->next = NULL;
+  print_deck(shuffle(deck, bottom_half, size), size, PREFIX_IN);
+  // print_deck(deck, size/2, PREFIX_IN);
+  // print_deck(bottom_half, size/2, PREFIX_IN);
+  return bottom_half;
+}
 /*
 @brief This function prints the deck of cards when its a linked list
 
