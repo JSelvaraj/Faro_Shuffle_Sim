@@ -15,8 +15,4 @@ struct Card {
 Card* get_cards(int size);
 void print_deck(Card* deck, int size, Stringplace prefix);
 Card* shuffle(Card* top, Card* bot);
-<<<<<<< HEAD
 Card* split(Card* deck, int size);
-=======
-Card* split(deck, size);
->>>>>>> c474be25a62ab5f8e465e95ba94f6c801ae5b1b3
