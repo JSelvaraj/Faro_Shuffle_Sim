@@ -1,4 +1,6 @@
 #include "headers.h"
+
+
 int main(int argc, char *argv[]) {
   if (argc < 2 || (strncmp(argv[1], "RANKSUIT", 8) != 0 && strncmp(argv[1], "NUMERICAL", 9) != 0 )) {
     printf("Usage: ./faro_shuffle RANKSUIT||NUMERICAL\n");
@@ -21,6 +23,7 @@ int main(int argc, char *argv[]) {
   // printf("%d\n",pos_k);
   Card* deck = get_cards(size);
   print_deck(deck, size, PREFIX_OUT);
+  
 
 
 

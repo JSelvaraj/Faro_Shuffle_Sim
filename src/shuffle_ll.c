@@ -21,7 +21,11 @@ Card* split(Card* deck, int size) {
   }
   Card* bottom_half = current_node->next;
   current_node->next = NULL;
+<<<<<<< HEAD
   print_deck(shuffle(deck,bottom_half), size, PREFIX_IN );
+=======
+  print_deck(shuffle(deck,bottom_half), size, PREFIX_IN )
+>>>>>>> c06e8f950c00352f19c562fc3994ec080e268041
   return bottom_half;
 }
 
