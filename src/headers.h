@@ -14,3 +14,4 @@ struct Card {
 
 Card* get_cards(int size);
 void print_deck(Card* deck, int size, Stringplace prefix);
+Card* shuffle(Card* top, Card* bot);
