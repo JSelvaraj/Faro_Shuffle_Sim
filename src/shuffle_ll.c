@@ -21,11 +21,12 @@ Card* shuffle(Card* top, Card* bot) {
   Card* current_node = top;
   Card* top_ptr = top;
   Card* bot_ptr = bot;
-  while (new_deck->next != NULL) {
+  while (current_node->next != NULL) {
     top_ptr = top_ptr->next;
     current_node->next = bot_ptr;
     current_node = current_node->next;
     bot_ptr = bot_ptr->next;
     current_node->next = top_ptr;
   }
+  return new_deck;
 }
