@@ -1,9 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "headers.h"
-#include "files/print_faro_val.h"
-
 /*
 @brief This function prints the deck of cards when its a linked list
 
