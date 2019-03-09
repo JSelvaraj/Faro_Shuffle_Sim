@@ -16,7 +16,7 @@ split into a new linked list.
 Card* split(Card* deck, int size) {
   int mid = size/2;
   Card* current_node = deck;
-  for (int i = 0; i < mid; i++) {
+  for (int i = 0; i < mid -1; i++) {
     current_node = current_node->next;
   }
   Card* bottom_half = current_node->next;
