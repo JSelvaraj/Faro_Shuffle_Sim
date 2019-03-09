@@ -20,5 +20,5 @@ int* decToBinary(int number, int* length) {
       number = number / 2;
       i++;
   }
-  return binary =
+  return binary;
 }
