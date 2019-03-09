@@ -46,7 +46,7 @@ Card* shuffle(Card* top, Card* bot) {
   Card* bot_ptr = bot;
   top_ptr = top_ptr->next;
   current_node->next = bot_ptr;
-  while (current_node->next != NULL) {
+  while (current_node->next->next != NULL) {
     bot_ptr = bot_ptr->next;
     current_node = current_node->next;
     current_node->next = top_ptr;
