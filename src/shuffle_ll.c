@@ -13,7 +13,7 @@ split into a new linked list.
 
 */
 
-Card* split(Card** deck, int size) {
+Card* split(Card* deck, int size) {
   int mid = size/2;
   Card* current_node = *deck;
   for (int i = 0; i < mid -1; i++) {
@@ -21,7 +21,7 @@ Card* split(Card** deck, int size) {
   }
   Card* bottom_half = current_node->next;
   current_node->next = NULL;
-  print_deck(deck, size/2, PREFIX_IN);
+  // print_deck(deck, size/2, PREFIX_IN);
     // print_deck(bottom_half, size/2, PREFIX_IN);
   return bottom_half;
 }
