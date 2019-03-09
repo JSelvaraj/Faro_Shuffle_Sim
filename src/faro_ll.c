@@ -135,7 +135,7 @@ void faro(Card* deck,int size, int* k_binary, int k_length) {
   Card* bottom_half = NULL;
   for (int i = k_length - 1; i >= 0; i--) {
     bottom_half = split(deck, size);
-    if (k_binary == 1) {
+    if (k_binary[i] == 1) {
       deck = shuffle(bottom_half, deck, size);
       print_deck(deck, size, PREFIX_IN);
     } else {
