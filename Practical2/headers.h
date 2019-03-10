@@ -10,6 +10,7 @@ typedef struct Card Card;
 struct Card {
   char rank;
   char suit;
+  int number; //for the NUMERICAL extension
   Card *next;
 };
 

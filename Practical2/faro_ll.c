@@ -131,6 +131,14 @@ void faro(Card** deck,int size, int* k_binary, int k_length) {
   }
 }
 
+/**
+@brief This function takes the head node of the linked list of cards and
+iteratively frees all the allocated memory from the list.
+
+@param current_node the head node of the linked list
+@param size the length of the linked list
+*/
+
 void free_ll(Card* current_node, int size) {
   while (size > 0) {
     Card* temp = current_node->next;
