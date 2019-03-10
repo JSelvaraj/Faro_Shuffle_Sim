@@ -7,26 +7,30 @@ int main(int argc, char *argv[]) {
     exit(-1);
   }
   int size = 0;
-  while(scanf("%d", &size) != 1) {
-    printf ("Invalid input\n");
-    exit(-1);
+  while (true) {
+    while(scanf("%d", &size) != 1) {
+      printf ("Invalid input\n");
+      exit(-1);
+    }
+    if (size == -1) {
+      break;
+    }
+    int pos_k = 0;
+    while(scanf("%d", &pos_k) != 1) {
+      printf ("Invalid input\n");
+      exit(-1);
+    }
+    if (pos_k > size) { // if the given position is larger than the number of cards it gets remainder and takes that as the position.
+      pos_k = pos_k % size;
+    }
+    // printf("%d\n",size);
+    // printf("k: %d\n",pos_k);
+    Card* deck = get_cards(size);
+    int k_length = 0;
+    int* k_binary = decToBinary(pos_k, &k_length);
+    // printf("k_length = %d\n", k_length);
+    deck = faro(deck, size, k_binary, k_length);
+    free_ll(deck, size);
+    free(k_binary);
   }
-  int pos_k = 0;
-  while(scanf("%d", &pos_k) != 1) {
-    printf ("Invalid input\n");
-    exit(-1);
-  }
-  if (pos_k > size) { // if the given position is larger than the number of cards it gets remainder and takes that as the position.
-    pos_k = pos_k % size;
-  }
-  // printf("%d\n",size);
-  // printf("%d\n",pos_k);
-  Card* deck = get_cards(size);
-  int k_length = 0;
-  int* k_ptr = &k_length;
-  int* k_binary = decToBinary(pos_k, k_ptr);
-  printf("k_length = %d\n", k_length);
-  faro(deck, size, k_binary, k_length);
-
-
 }

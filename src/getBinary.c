@@ -25,5 +25,6 @@ int* decToBinary(int number, int* length) {
       i++;
       // printf("binary[%d] = %d\n",i -1 , binary[i-1]);
   }
+  // printf("hello there\n");
   return binary;
 }
