@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "files/print_faro_val.h"
+#include "math.h"
 
 typedef struct Card Card;
 struct Card {

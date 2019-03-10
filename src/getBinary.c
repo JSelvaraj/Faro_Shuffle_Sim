@@ -1,5 +1,5 @@
 #include "headers.h"
-#include <math.h>
+
 
 /*
 @brief This function converts a decimal number to its binary representation
@@ -14,13 +14,16 @@ significant bit stored last and least significant stored first)
 int* decToBinary(int number, int* length) {
   double k_length = 0;
   k_length = log10(number)/log10(2);
+  k_length++;
   *length = k_length;
+  // printf("length = %d\n", *length);
   int* binary = malloc(sizeof(int) * *length);
   int i = 0;
   while (number > 0) {
       binary[i] = number % 2;
       number = number / 2;
       i++;
+      // printf("binary[%d] = %d\n",i -1 , binary[i-1]);
   }
   return binary;
 }

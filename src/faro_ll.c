@@ -88,7 +88,6 @@ Card* split(Card* deck, int size) {
   }
   Card* bottom_half = current_node->next;
   current_node->next = NULL;
-  print_deck(shuffle(deck, bottom_half, size), size, PREFIX_IN);
   // print_deck(deck, size/2, PREFIX_IN);
   // print_deck(bottom_half, size/2, PREFIX_IN);
   return bottom_half;
@@ -117,8 +116,6 @@ void print_deck(Card* deck, int size, Stringplace prefix) {
   }
   print_faro_val("", SUFFIX);
 }
-
-
 /**
 @brief This function handles the faro shuffle by calling the other
 functions.

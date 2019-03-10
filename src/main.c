@@ -25,6 +25,7 @@ int main(int argc, char *argv[]) {
   int k_length = 0;
   int* k_ptr = &k_length;
   int* k_binary = decToBinary(pos_k, k_ptr);
+  printf("k_length = %d\n", k_length);
   faro(deck, size, k_binary, k_length);
 
 
