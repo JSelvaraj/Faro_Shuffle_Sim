@@ -1,12 +1,11 @@
 #include "headers.h"
 
 /*
-@brief This function reads in a number rank, suit values = to 'size' and returns the
+@brief This function reads in a number of rank + suit values = to 'size' and returns the
 head of a linked list of the deck of cards
 
 @param size the number of values being read in.
 */
-
 Card* get_cards_ranksuit(int size) {
   Card* head = NULL;
   Card* current_node;
@@ -30,7 +29,12 @@ Card* get_cards_ranksuit(int size) {
   }
   return head;
 }
+/*
+@brief This function reads in a number of numeric values = to 'size' and returns the
+head of a linked list of the deck of cards
 
+@param size the number of values being read in.
+*/
 Card* get_cards_numerical(int size) {
   Card* head = NULL;
   Card* current_node;
@@ -52,7 +56,6 @@ Card* get_cards_numerical(int size) {
   }
   return head;
 }
-
 /**
 @brief This function interweaves two equal length linked lists. Taking one
 node from top then from bottom, repeated until the end of the linked lists.
@@ -128,7 +131,14 @@ void print_deck(Card* current_node, int size, Stringplace prefix) {
   }
   print_faro_val("", SUFFIX);
 }
+/*
+@brief This function prints the deck of cards with numerical values
 
+@param deck the linked list of Cards being printed
+@param size the length of the linked list 'deck'
+@param prefix whether an IN shuffle or OUT shuffle was performed.
+
+*/
 void print_deck_numerical(Card* current_node, int size, Stringplace prefix) {
   int length = getIntLength(current_node->number);
   char* card = malloc(sizeof(char) * length);
@@ -189,6 +199,16 @@ void free_ll(Card* current_node, int size) {
 }
 
 /**
+@brief This function handles the faro shuffle by calling the other
+functions. Used for when the deck has numerical values.
+
+@param deck is the deck of cards to be shuffled
+@param size is the length of the deck
+@param k_binary is the binary representation of the position k
+specified by the user.
+@param k_length is the length of the binary k
+
+@return void
 */
 void faro_numerical(Card** deck,int size, int* k_binary, int k_length) {
   Card* bottom_half = NULL;
