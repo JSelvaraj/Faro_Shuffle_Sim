@@ -35,6 +35,7 @@ Card* get_cards_numerical(int size) {
   Card* head = NULL;
   Card* current_node;
   Card *new_node;
+
   for (int i = 0; i < size; i++) {
     new_node = malloc(sizeof(Card));
     scanf("%d\n", &new_node->number);
@@ -49,6 +50,7 @@ Card* get_cards_numerical(int size) {
     if (i < (size -1)) {
     }
   }
+  return head;
 }
 
 /**
@@ -131,9 +133,9 @@ void print_deck_numerical(Card* current_node, int size, Stringplace prefix) {
   int length = getIntLength(current_node->number);
   char* card = malloc(sizeof(char) * length);
   for (int i = 0; i < length - 1; i++) {
-    card[i] = "";
+    card[i] = (char) "";
   }
-  card[length - 1] = NULL;
+  card[length - 1] = (char) NULL;
   print_faro_val("", prefix);
   while (size > 0) {
     sprintf(card,"%d",current_node->number);
@@ -170,8 +172,6 @@ void faro(Card** deck,int size, int* k_binary, int k_length) {
   }
 }
 
-
-
 /**
 @brief This function takes the head node of the linked list of cards and
 iteratively frees all the allocated memory from the list.
@@ -185,5 +185,21 @@ void free_ll(Card* current_node, int size) {
     free(current_node);
     current_node = temp;
     size--;
+  }
+}
+
+/**
+*/
+void faro_numerical(Card** deck,int size, int* k_binary, int k_length) {
+  Card* bottom_half = NULL;
+  for (int i = k_length - 1; i >= 0; i--) {
+    bottom_half = split(*deck, size);
+    if (k_binary[i] == 1) {
+      *deck = shuffle(bottom_half, *deck, size);
+      print_deck_numerical(*deck, size, PREFIX_IN);
+    } else {
+      *deck = shuffle(*deck, bottom_half, size);
+      print_deck_numerical(*deck, size, PREFIX_OUT);
+    }
   }
 }
