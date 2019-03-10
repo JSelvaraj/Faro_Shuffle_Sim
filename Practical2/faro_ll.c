@@ -154,8 +154,6 @@ void faro(Card** deck,int size, int* k_binary, int k_length) {
       print_deck(*deck, size, PREFIX_OUT);
     }
   }
-  return *deck;
-
 }
 
 void free_ll(Card* current_node, int size) {
