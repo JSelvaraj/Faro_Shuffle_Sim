@@ -17,6 +17,6 @@ Card* get_cards(int size);
 void print_deck(Card* deck, int size, Stringplace prefix);
 Card* shuffle(Card* top, Card* bot,int size);
 Card* split(Card* deck, int size);
-Card* faro(Card* deck,int size, int* k_binary, int k_length);
+Card* faro(Card** deck,int size, int* k_binary, int k_length);
 int* decToBinary(int number, int* length);
 void free_ll(Card* deck, int size);

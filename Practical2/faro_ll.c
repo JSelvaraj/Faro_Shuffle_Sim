@@ -138,23 +138,23 @@ specified by the user.
 
 @return void
 */
-Card* faro(Card* deck,int size, int* k_binary, int k_length) {
+Card* faro(Card** deck,int size, int* k_binary, int k_length) {
   Card* bottom_half = NULL;
   // printf("General Kenobi!!\n");
   for (int i = k_length - 1; i >= 0; i--) {
     // printf("You were the chosen one\n");
-    bottom_half = split(deck, size);
+    bottom_half = split(*deck, size);
     // printf("General Kenobi!!!\n");
     if (k_binary[i] == 1) {
       // printf("General Kenobi!\n");
-      deck = shuffle(bottom_half, deck, size);
-      print_deck(deck, size, PREFIX_IN);
+      *deck = shuffle(bottom_half, *deck, size);
+      print_deck(*deck, size, PREFIX_IN);
     } else {
-      deck = shuffle(deck, bottom_half, size);
-      print_deck(deck, size, PREFIX_OUT);
+      *deck = shuffle(*deck, bottom_half, size);
+      print_deck(*deck, size, PREFIX_OUT);
     }
   }
-  return deck;
+  return *deck;
 
 }
 
