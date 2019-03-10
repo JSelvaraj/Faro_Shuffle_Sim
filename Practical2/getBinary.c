@@ -16,15 +16,12 @@ int* decToBinary(int number, int* length) {
   k_length = log10(number)/log10(2);
   k_length++;
   *length = k_length;
-  // printf("length = %d\n", *length);
   int* binary = malloc(sizeof(int) * *length);
   int i = 0;
   while (number > 0) {
       binary[i] = number % 2;
       number = number / 2;
       i++;
-      // printf("binary[%d] = %d\n",i -1 , binary[i-1]);
   }
-  // printf("hello there\n");
   return binary;
 }

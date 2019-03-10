@@ -23,12 +23,9 @@ int main(int argc, char *argv[]) {
     if (pos_k > size) { // if the given position is larger than the number of cards it gets remainder and takes that as the position.
       pos_k = pos_k % size;
     }
-    // printf("%d\n",size);
-    // printf("k: %d\n",pos_k);
     Card* deck = get_cards(size);
     int k_length = 0;
     int* k_binary = decToBinary(pos_k, &k_length);
-    // printf("k_length = %d\n", k_length);
     faro(&deck, size, k_binary, k_length);
     free_ll(deck, size);
     free(k_binary);

@@ -7,37 +7,26 @@ head of a linked list of the deck of cards
 @param size the number of values being read in.
 */
 Card* get_cards(int size) {
-  // printf("get_cards size: %d\n", size);
   Card* head = NULL;
   Card* current_node;
   Card *new_node;
   fgetc(stdin);
   for (int i = 0; i < size; i++) {
-    // printf("I am here i:%d\n", i);
     new_node = malloc(sizeof(Card));
     new_node->rank = fgetc(stdin);
     new_node->suit = fgetc(stdin);
-            // printf("I'm still here i:%d\n", i);
     new_node->next = NULL;
-    // printf("%c\n", new_node->rank);
-    // printf("%c\n", new_node->suit);
     if (head == NULL) {
-            // printf("hiiiiashd");
       head = new_node;
       current_node = new_node;
-
     } else {
       current_node->next = new_node;
       current_node = current_node->next;
     }
-    // printf("Omai wa Shindeiru\n");
     if (i < (size -1)) {
-      // printf("test2\n");
       fgetc(stdin);
-      // printf("test\n");
     }
   }
-  // printf("here\n");
   return head;
 }
 /**
@@ -55,25 +44,20 @@ lists.
 Card* shuffle(Card* top, Card* bot, int size) {
   Card* new_deck = top;
   Card* current_node = top;
-  // printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
   Card* top_ptr = top;
   Card* bot_ptr = bot;
   top_ptr = top_ptr->next;
   current_node->next = bot_ptr;
   current_node = current_node->next;
-  // printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
   size -= 2;
   while (size > 0) {
     bot_ptr = bot_ptr->next;
     current_node->next = top_ptr;
     top_ptr = top_ptr->next;
     current_node = current_node->next;
-    // printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
     current_node->next = bot_ptr;
     current_node = current_node->next;
-    // printf("Current Node Val %c%c\n", current_node->rank, current_node->suit);
     size -= 2;
-    // printf("%d\n", size);
   }
   return new_deck;
 }
@@ -90,16 +74,11 @@ split into a new linked list.
 Card* split(Card* deck, int size) {
   int mid = size/2;
   Card* current_node = deck;
-// printf("what\n");
   for (int i = 0; i < mid -1; i++) {
-    // printf("Hi there\n");
     current_node = current_node->next;
-    // printf("Hi there!!\n");
   }
   Card* bottom_half = current_node->next;
   current_node->next = NULL;
-  // print_deck(deck, size/2, PREFIX_IN);
-  // print_deck(bottom_half, size/2, PREFIX_IN);
   return bottom_half;
 }
 /*
@@ -140,13 +119,9 @@ specified by the user.
 */
 void faro(Card** deck,int size, int* k_binary, int k_length) {
   Card* bottom_half = NULL;
-  // printf("General Kenobi!!\n");
   for (int i = k_length - 1; i >= 0; i--) {
-    // printf("You were the chosen one\n");
     bottom_half = split(*deck, size);
-    // printf("General Kenobi!!!\n");
     if (k_binary[i] == 1) {
-      // printf("General Kenobi!\n");
       *deck = shuffle(bottom_half, *deck, size);
       print_deck(*deck, size, PREFIX_IN);
     } else {
@@ -163,10 +138,4 @@ void free_ll(Card* current_node, int size) {
     current_node = temp;
     size--;
   }
-
-
-  // if (deck->next != NULL) {
-  //   free_ll(deck->next);
-  // }
-  // free(deck);
 }
