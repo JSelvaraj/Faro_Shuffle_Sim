@@ -1,5 +1,5 @@
 all:main.o faro_ll.o files/print_faro_val.o getBinary.o
-	clang -lm main.o getBinary.o faro_ll.o files/print_faro_val.o  -o test
+	clang -lm main.o getBinary.o faro_ll.o files/print_faro_val.o  -o faro_shuffle
 
 all2: main.o getInput.o print_ll.o files/print_faro_val.o shuffle_ll.o
 	clang main.o getInput.o print_ll.o files/print_faro_val.o shuffle_ll.o -o test
