@@ -6,7 +6,8 @@ head of a linked list of the deck of cards
 
 @param size the number of values being read in.
 */
-Card* get_cards(int size) {
+
+Card* get_cards_ranksuit(int size) {
   Card* head = NULL;
   Card* current_node;
   Card *new_node;
@@ -29,6 +30,27 @@ Card* get_cards(int size) {
   }
   return head;
 }
+
+Card* get_cards_numerical(int size) {
+  Card* head = NULL;
+  Card* current_node;
+  Card *new_node;
+  for (int i = 0; i < size; i++) {
+    new_node = malloc(sizeof(Card));
+    scanf("%d\n", &new_node->number);
+    new_node->next = NULL;
+    if (head == NULL) {
+      head = new_node;
+      current_node = new_node;
+    } else {
+      current_node->next = new_node;
+      current_node = current_node->next;
+    }
+    if (i < (size -1)) {
+    }
+  }
+}
+
 /**
 @brief This function interweaves two equal length linked lists. Taking one
 node from top then from bottom, repeated until the end of the linked lists.
@@ -89,8 +111,7 @@ Card* split(Card* deck, int size) {
 @param prefix whether an IN shuffle or OUT shuffle was performed.
 
 */
-void print_deck(Card* deck, int size, Stringplace prefix) {
-  Card* current_node = deck;
+void print_deck(Card* current_node, int size, Stringplace prefix) {
   char card[3];
   card[0] = (char) "";
   card[1] = (char) "";
@@ -105,6 +126,24 @@ void print_deck(Card* deck, int size, Stringplace prefix) {
   }
   print_faro_val("", SUFFIX);
 }
+
+void print_deck_numerical(Card* current_node, int size, Stringplace prefix) {
+  int length = getIntLength(current_node->number);
+  char* card = malloc(sizeof(char) * length);
+  for (int i = 0; i < length - 1; i++) {
+    card[i] = "";
+  }
+  card[length - 1] = NULL;
+  print_faro_val("", prefix);
+  while (size > 0) {
+    sprintf(card,"%d",current_node->number);
+    current_node = current_node->next;
+    print_faro_val(card, CARD_VAL);
+    size--;
+  }
+  print_faro_val("", SUFFIX);
+}
+
 /**
 @brief This function handles the faro shuffle by calling the other
 functions.
@@ -131,6 +170,8 @@ void faro(Card** deck,int size, int* k_binary, int k_length) {
   }
 }
 
+
+
 /**
 @brief This function takes the head node of the linked list of cards and
 iteratively frees all the allocated memory from the list.
@@ -138,7 +179,6 @@ iteratively frees all the allocated memory from the list.
 @param current_node the head node of the linked list
 @param size the length of the linked list
 */
-
 void free_ll(Card* current_node, int size) {
   while (size > 0) {
     Card* temp = current_node->next;
