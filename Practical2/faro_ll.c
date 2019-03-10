@@ -138,7 +138,7 @@ specified by the user.
 
 @return void
 */
-Card* faro(Card** deck,int size, int* k_binary, int k_length) {
+void faro(Card** deck,int size, int* k_binary, int k_length) {
   Card* bottom_half = NULL;
   // printf("General Kenobi!!\n");
   for (int i = k_length - 1; i >= 0; i--) {
