@@ -23,7 +23,7 @@ Card* get_cards_ranksuit(int size) {
       current_node->next = new_node;
       current_node = current_node->next;
     }
-    if (i < (size -1)) {
+    if (i < (size -1)) { // The last card won't have a space after it
       fgetc(stdin);
     }
   }
@@ -181,7 +181,7 @@ void faro_numerical(Card** deck,int size, int* k_binary, int k_length) {
 */
 void print_deck_numerical(Card* current_node, int size, Stringplace prefix) {
   int length = getIntLength(current_node->number);
-  char* card = malloc(sizeof(char) * length);
+  char* card = malloc((sizeof(char) * length) + 1);
   for (int i = 0; i < length - 1; i++) {
     card[i] = (char) "";
   }

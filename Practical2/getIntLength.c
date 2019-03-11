@@ -6,5 +6,5 @@ int getIntLength(int n) {
     n = n / 10;
     length++;
   }
-  return n;
+  return length;
 }
