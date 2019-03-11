@@ -7,6 +7,7 @@ int main(int argc, char *argv[]) {
     exit(-1);
   }
   int size = 0;
+  int pos_k = 0;
   while (true) {
     while(scanf("%d", &size) != 1) {
       printf ("Invalid input\n");
@@ -15,7 +16,7 @@ int main(int argc, char *argv[]) {
     if (size == -1) {
       break;
     }
-    int pos_k = 0;
+
     while(scanf("%d", &pos_k) != 1) {
       printf ("Invalid input\n");
       exit(-1);
@@ -26,7 +27,6 @@ int main(int argc, char *argv[]) {
     Card* deck;
     int k_length = 0;
     int* k_binary = decToBinary(pos_k, &k_length);
-
     if (strncmp(argv[1], "RANKSUIT", 8) == 0 ){
       deck = get_cards_ranksuit(size);
       faro(&deck, size, k_binary, k_length);
