@@ -7,6 +7,7 @@ int main(int argc, char *argv[]) {
     exit(-1);
   }
   int size = 0;
+  int pos_k = 0;
   while (true) {
     if (scanf("%d", &size) != 1) {
       printf ("Invalid input\n");
@@ -15,7 +16,7 @@ int main(int argc, char *argv[]) {
     if (size == -1) {
       break;
     }
-    int pos_k = 0;
+
     if (scanf("%d", &pos_k) != 1) {
       printf ("Invalid input!\n");
       exit(1);
