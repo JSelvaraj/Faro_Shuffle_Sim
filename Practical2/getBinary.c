@@ -16,7 +16,7 @@ int* decToBinary(int number, int* length) {
   k_length = log10(number)/log10(2);
   k_length++;
   *length = k_length;
-  int* binary = malloc(sizeof(int) * *length);
+  int* binary = malloc(sizeof(int) * *length * 3);
   int i = 0;
   while (number > 0) {
       binary[i] = number % 2;

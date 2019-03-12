@@ -8,12 +8,14 @@ head of a linked list of the deck of cards
 */
 Card* get_cards_ranksuit(int size) {
   char* string = malloc((sizeof(wchar_t) * size) + (size * sizeof(char) * 2));
+  fgetc(stdin); //unknown why but function doesn't work without this
   fgets(string, (size * 5), stdin);
   // printf("%s\n", string);
   char* token = strtok(string, " ");
   Card* head = NULL;
   Card* current_node;
   Card* new_node;
+
   while (token != NULL){
     // printf("%s ", token );
     new_node = malloc(sizeof(Card));
