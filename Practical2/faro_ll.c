@@ -7,14 +7,17 @@ head of a linked list of the deck of cards
 @param size the number of values being read in.
 */
 Card* get_cards_ranksuit(int size) {
+  char* string = malloc((sizeof(wchar_t) * size) + (size * sizeof(char) * 2));
+  fgetc(stdin); //unknown why but function doesn't work without this
+  fgets(string, (size * 5), stdin);
+  char* token = strtok(string, " ");
   Card* head = NULL;
   Card* current_node;
-  Card *new_node;
-  fgetc(stdin);
-  for (int i = 0; i < size; i++) {
+  Card* new_node;
+  while (token != NULL){
+    // printf("%s ", token );
     new_node = malloc(sizeof(Card));
-    new_node->rank = fgetc(stdin);
-    new_node->suit = fgetc(stdin);
+    new_node->value = token;
     new_node->next = NULL;
     if (head == NULL) {
       head = new_node;
@@ -23,8 +26,10 @@ Card* get_cards_ranksuit(int size) {
       current_node->next = new_node;
       current_node = current_node->next;
     }
-    if (i < (size -1)) { // The last card won't have a space after it
-      fgetc(stdin);
+    token = strtok(NULL," ");
+    size--;
+    if (size == 1) {
+      token = strtok(token,"\n");
     }
   }
   return head;
@@ -90,16 +95,10 @@ Card* split(Card* deck, int size) {
 
 */
 void print_deck(Card* current_node, int size, Stringplace prefix) {
-  char card[3];
-  card[0] = (char) "";
-  card[1] = (char) "";
-  card[2] = (char) NULL; //the cast is to remove the warning
   print_faro_val("", prefix);
   while (size > 0) {
-    card[0] = current_node->rank;
-    card[1] = current_node->suit;
+    print_faro_val(current_node->value, CARD_VAL);
     current_node = current_node->next;
-    print_faro_val(card, CARD_VAL);
     size--;
   }
   print_faro_val("", SUFFIX);
