@@ -204,10 +204,9 @@ Card* get_cards_numerical(int size) {
   Card* head = NULL;
   Card* current_node;
   Card *new_node;
-
   for (int i = 0; i < size; i++) {
     new_node = malloc(sizeof(Card));
-    scanf("%d\n", &new_node->number);
+    scanf("%d", &new_node->number);
     new_node->next = NULL;
     if (head == NULL) {
       head = new_node;
