@@ -14,4 +14,4 @@ getIntLength.o: getIntLength.c headers.h
 	clang getIntLength.c -c
 
 clean:
-	rm *.o
+	rm *.o faro_shuffle utf
