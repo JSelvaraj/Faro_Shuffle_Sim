@@ -11,7 +11,7 @@ struct Cart {
 
 
 
-Cart* get_cards_ranksuit(int size) {
+Cart* get_cards(int size) {
   char* string = malloc((sizeof(wchar_t) * size) + (size * sizeof(char) * 2));
   fgets(string, (size * 5), stdin);
   // printf("%s\n", string);
@@ -32,18 +32,24 @@ Cart* get_cards_ranksuit(int size) {
       current_node->next = new_node;
       current_node = current_node->next;
     }
-    token = strtok(NULL, " ");
+    token = strtok(NULL," ");
+    size--;
+    if (size == 1) {
+      token = strtok(token,"\n");
+    }
   }
   return head;
-  printf("\n");
 }
 
 int main(void) {
   int size = 6;
+  scanf("%d\n", &size);
+  // fgetc(stdin);
   Cart* deck;
   deck = get_cards(size);
   print_faro_val("",PREFIX_IN);
   for (int i = 0; i < size; i ++) {
+    // printf("%s",deck->value);
     print_faro_val(deck->value,CARD_VAL);
     deck = deck->next;
   }

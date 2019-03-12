@@ -8,7 +8,7 @@
 
 typedef struct Card Card;
 struct Card {
-  char value;
+  char* value;
   unsigned int number; //for the NUMERICAL extension
   Card *next;
 };

@@ -7,16 +7,17 @@ head of a linked list of the deck of cards
 @param size the number of values being read in.
 */
 Card* get_cards_ranksuit(int size) {
+  char* string = malloc((sizeof(wchar_t) * size) + (size * sizeof(char) * 2));
+  fgets(string, (size * 5), stdin);
+  // printf("%s\n", string);
+  char* token = strtok(string, " ");
   Card* head = NULL;
   Card* current_node;
-  Card *new_node;
-
-  char* string = malloc(sizeof(char) * 2 + 1);
-  for (int i = 0; i < size; i++) {
+  Card* new_node;
+  while (token != NULL){
+    // printf("%s ", token );
     new_node = malloc(sizeof(Card));
-    scanf("%c%c\n", string[0], string[1]);
-    string[2] = NULL;
-    printf("%c%c\n", string[0], string[1]);
+    new_node->value = token;
     new_node->next = NULL;
     if (head == NULL) {
       head = new_node;
@@ -25,8 +26,10 @@ Card* get_cards_ranksuit(int size) {
       current_node->next = new_node;
       current_node = current_node->next;
     }
-    if (i < (size -1)) {
-      fgetc(stdin);
+    token = strtok(NULL," ");
+    size--;
+    if (size == 1) {
+      token = strtok(token,"\n");
     }
   }
   return head;
