@@ -11,14 +11,14 @@ int main(int argc, char *argv[]) {
   while (true) {
     if (scanf("%d", &size) != 1) {
       printf ("Invalid input\n");
-      exit(-1);
+      exit(1);
     }
     if (size == -1) {
       break;
     }
     if (scanf("%d", &pos_k) != 1) {
       printf ("Invalid input\n");
-      exit(-1);
+      exit(1);
     }
     if (pos_k > size) { // if the given position is larger than the number of cards it gets remainder and takes that as the position.
       pos_k = pos_k % size;
