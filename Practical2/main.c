@@ -9,14 +9,14 @@ int main(int argc, char *argv[]) {
   int size = 0;
   int pos_k = 0;
   while (true) {
-    while(scanf("%d", &size) != 1) {
+    if (scanf("%d", &size) != 1) {
       printf ("Invalid input\n");
       exit(-1);
     }
     if (size == -1) {
       break;
     }
-    while(scanf("%d", &pos_k) != 1) {
+    if (scanf("%d", &pos_k) != 1) {
       printf ("Invalid input\n");
       exit(-1);
     }
