@@ -1,8 +1,7 @@
 #include "headers.h"
 #include "files/print_faro_val.h"
 
-/*
-@brief This function reads in a number of rank + suit values = to 'size' and returns the
+/**@brief This function reads in a number of rank + suit values = to 'size' and returns the
 head of a linked list of the deck of cards
 
 @param size the number of values being read in.
@@ -34,8 +33,7 @@ Card* get_cards_ranksuit(int size) {
   }
   return head;
 }
-/**
-@brief This function interweaves two equal length linked lists. Taking one
+/**@brief This function interweaves two equal length linked lists. Taking one
 node from top then from bottom, repeated until the end of the linked lists.
 
 @param top the elements of this linked list will make up the 1st, 3rd etc.
@@ -64,8 +62,7 @@ Card* shuffle(Card* top_ptr, Card* bot_ptr, int size) {
   }
   return new_deck;
 }
-/*
-@brief This function iterates through a linked list and splits it at the halfway point.
+/**@brief This function iterates through a linked list and splits it at the halfway point.
 then it returns the bottom half of the list.
 
 @param deck the linked list representing the deck of cards. Half of the deck is
@@ -84,8 +81,7 @@ Card* split(Card* deck, int size) {
   current_node->next = NULL;
   return bottom_half;
 }
-/*
-@brief This function prints the deck of cards when its a linked list
+/**@brief This function prints the deck of cards when its a linked list
 
 @param deck the linked list of Cards being printed
 @param size the length of the linked list 'deck'
@@ -101,8 +97,7 @@ void print_deck(Card* current_node, int size, Stringplace prefix) {
   }
   print_faro_val("", SUFFIX);
 }
-/**
-@brief This function takes the head node of the linked list of cards and
+/**@brief This function takes the head node of the linked list of cards and
 iteratively frees all the allocated memory from the list.
 
 @param current_node the head node of the linked list
@@ -121,8 +116,7 @@ void free_ll(Card* current_node, int size, int k) {
     current_node = temp;
   }
 }
-/**
-@brief This function calculates the length of a decimal number.
+/**@brief This function calculates the length of a decimal number.
 It is used to calculate how much memory needs to be mallocd
 to contain a string for that number
 
@@ -136,8 +130,7 @@ int getIntLength(int n) {
   }
   return length;
 }
-/**
-@brief This function handles the faro shuffle by calling the other
+/**@brief This function handles the faro shuffle by calling the other
 functions.
 
 @param deck is the deck of cards to be shuffled
@@ -163,8 +156,7 @@ void faro(Card** deck,int size, int* k_binary, int k_length, int k) {
   free_ll(*deck, size, k);
   free(k_binary);
 }
-/*
-@brief This function prints the deck of cards with numerical values
+/**@brief This function prints the deck of cards with numerical values
 
 @param deck the linked list of Cards being printed
 @param size the length of the linked list 'deck'
@@ -187,8 +179,7 @@ void print_deck_numerical(Card* current_node, int size, Stringplace prefix) {
   }
   print_faro_val("", SUFFIX);
 }
-/*
-@brief This function reads in a number of numeric values = to 'size' and returns the
+/**@brief This function reads in a number of numeric values = to 'size' and returns the
 head of a linked list of the deck of cards
 
 @param size the number of values being read in.
@@ -213,8 +204,7 @@ Card* get_cards_numerical(int size) {
   }
   return head;
 }
-/**
-@brief This function handles the faro shuffle by calling the other
+/**@brief This function handles the faro shuffle by calling the other
 functions. Used for when the deck has numerical values.
 
 @param deck is the deck of cards to be shuffled

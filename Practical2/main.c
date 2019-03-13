@@ -2,6 +2,11 @@
 
 int* decToBinary(int number, int* length);
 
+
+/**@brief This is the main controlling function of the faro shuffle.
+@param argc should be a minimum of 2
+@param argv[] should contain either the option RANKSUIT or NUMERICAL
+*/
 int main(int argc, char *argv[]) {
   if (argc < 2 || (strncmp(argv[1], "RANKSUIT", 8) != 0 && strncmp(argv[1], "NUMERICAL", 9) != 0 )) {
     printf("Usage: ./faro_shuffle RANKSUIT||NUMERICAL\n");

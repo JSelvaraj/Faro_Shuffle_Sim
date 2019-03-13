@@ -1,0 +1,32 @@
+\hypertarget{getBinary_8c}{}\section{get\+Binary.\+c File Reference}
+\label{getBinary_8c}\index{get\+Binary.\+c@{get\+Binary.\+c}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{getBinary_8c_a46a4bc2f6ccf9c64ca251383bb5b4b53}{dec\+To\+Binary}} (int number, int $\ast$length)
+\begin{DoxyCompactList}\small\item\em This function converts a decimal number to its binary representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{getBinary_8c_a46a4bc2f6ccf9c64ca251383bb5b4b53}\label{getBinary_8c_a46a4bc2f6ccf9c64ca251383bb5b4b53}} 
+\index{get\+Binary.\+c@{get\+Binary.\+c}!dec\+To\+Binary@{dec\+To\+Binary}}
+\index{dec\+To\+Binary@{dec\+To\+Binary}!get\+Binary.\+c@{get\+Binary.\+c}}
+\subsubsection{\texorpdfstring{dec\+To\+Binary()}{decToBinary()}}
+{\footnotesize\ttfamily int$\ast$ dec\+To\+Binary (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{int $\ast$}]{length }\end{DoxyParamCaption})}
+
+
+
+This function converts a decimal number to its binary representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & the number \char`\"{}k\char`\"{} that is to be converted \\
+\hline
+{\em $\ast$length} & an integer point that will contain the length of the binary number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binary number stored in a integer array in reverse format (i.\+e. most significant bit stored last and least significant stored first) 
+\end{DoxyReturn}

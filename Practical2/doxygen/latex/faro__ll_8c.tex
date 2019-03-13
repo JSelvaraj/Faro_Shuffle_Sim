@@ -1,0 +1,226 @@
+\hypertarget{faro__ll_8c}{}\section{faro\+\_\+ll.\+c File Reference}
+\label{faro__ll_8c}\index{faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}}
+{\ttfamily \#include \char`\"{}headers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}files/print\+\_\+faro\+\_\+val.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCard}{Card}} $\ast$ \mbox{\hyperlink{faro__ll_8c_a4109c476de31df2bebcbcdc8aea015ce}{get\+\_\+cards\+\_\+ranksuit}} (int size)
+\begin{DoxyCompactList}\small\item\em This function reads in a number of rank + suit values = to \textquotesingle{}size\textquotesingle{} and returns the head of a linked list of the deck of cards. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCard}{Card}} $\ast$ \mbox{\hyperlink{faro__ll_8c_a7826df44bd7325ff77b37f6906c8b3b5}{shuffle}} (\mbox{\hyperlink{structCard}{Card}} $\ast$top\+\_\+ptr, \mbox{\hyperlink{structCard}{Card}} $\ast$bot\+\_\+ptr, int size)
+\begin{DoxyCompactList}\small\item\em This function interweaves two equal length linked lists. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCard}{Card}} $\ast$ \mbox{\hyperlink{faro__ll_8c_a868b6862345f68f72b198dc596518a7c}{split}} (\mbox{\hyperlink{structCard}{Card}} $\ast$deck, int size)
+\begin{DoxyCompactList}\small\item\em This function iterates through a linked list and splits it at the halfway point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{faro__ll_8c_ae2a2bc6885382b9cc2599bb23b95ff01}{print\+\_\+deck}} (\mbox{\hyperlink{structCard}{Card}} $\ast$current\+\_\+node, int size, Stringplace prefix)
+\begin{DoxyCompactList}\small\item\em This function prints the deck of cards when its a linked list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{faro__ll_8c_a962144b62958da28e1e9922621579e38}{free\+\_\+ll}} (\mbox{\hyperlink{structCard}{Card}} $\ast$current\+\_\+node, int size, int k)
+\begin{DoxyCompactList}\small\item\em This function takes the head node of the linked list of cards and iteratively frees all the allocated memory from the list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{faro__ll_8c_ae320ca99b8f27f8815fecd35a4d62cb3}{get\+Int\+Length}} (int n)
+\begin{DoxyCompactList}\small\item\em This function calculates the length of a decimal number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{faro__ll_8c_a01a5d69622ec6a2e17da6d60c1544808}{faro}} (\mbox{\hyperlink{structCard}{Card}} $\ast$$\ast$deck, int size, int $\ast$k\+\_\+binary, int k\+\_\+length, int k)
+\begin{DoxyCompactList}\small\item\em This function handles the faro shuffle by calling the other functions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{faro__ll_8c_a8eeb29c39fbff4529fb68b3b7eefa5e3}{print\+\_\+deck\+\_\+numerical}} (\mbox{\hyperlink{structCard}{Card}} $\ast$current\+\_\+node, int size, Stringplace prefix)
+\begin{DoxyCompactList}\small\item\em This function prints the deck of cards with numerical values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCard}{Card}} $\ast$ \mbox{\hyperlink{faro__ll_8c_aab1abce326d82808b8b4214ce6ce78f5}{get\+\_\+cards\+\_\+numerical}} (int size)
+\begin{DoxyCompactList}\small\item\em This function reads in a number of numeric values = to \textquotesingle{}size\textquotesingle{} and returns the head of a linked list of the deck of cards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{faro__ll_8c_a4a2826a96793d3582235f48446514ed2}{faro\+\_\+numerical}} (\mbox{\hyperlink{structCard}{Card}} $\ast$$\ast$deck, int size, int $\ast$k\+\_\+binary, int k\+\_\+length)
+\begin{DoxyCompactList}\small\item\em This function handles the faro shuffle by calling the other functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{faro__ll_8c_a01a5d69622ec6a2e17da6d60c1544808}\label{faro__ll_8c_a01a5d69622ec6a2e17da6d60c1544808}} 
+\index{faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}!faro@{faro}}
+\index{faro@{faro}!faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}}
+\subsubsection{\texorpdfstring{faro()}{faro()}}
+{\footnotesize\ttfamily void faro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCard}{Card}} $\ast$$\ast$}]{deck,  }\item[{int}]{size,  }\item[{int $\ast$}]{k\+\_\+binary,  }\item[{int}]{k\+\_\+length,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+This function handles the faro shuffle by calling the other functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em deck} & is the deck of cards to be shuffled \\
+\hline
+{\em size} & is the length of the deck \\
+\hline
+{\em k\+\_\+binary} & is the binary representation of the position k specified by the user. \\
+\hline
+{\em k\+\_\+length} & is the length of the binary k\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{faro__ll_8c_a4a2826a96793d3582235f48446514ed2}\label{faro__ll_8c_a4a2826a96793d3582235f48446514ed2}} 
+\index{faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}!faro\+\_\+numerical@{faro\+\_\+numerical}}
+\index{faro\+\_\+numerical@{faro\+\_\+numerical}!faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}}
+\subsubsection{\texorpdfstring{faro\+\_\+numerical()}{faro\_numerical()}}
+{\footnotesize\ttfamily void faro\+\_\+numerical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCard}{Card}} $\ast$$\ast$}]{deck,  }\item[{int}]{size,  }\item[{int $\ast$}]{k\+\_\+binary,  }\item[{int}]{k\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+This function handles the faro shuffle by calling the other functions. 
+
+Used for when the deck has numerical values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em deck} & is the deck of cards to be shuffled \\
+\hline
+{\em size} & is the length of the deck \\
+\hline
+{\em k\+\_\+binary} & is the binary representation of the position k specified by the user. \\
+\hline
+{\em k\+\_\+length} & is the length of the binary k\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{faro__ll_8c_a962144b62958da28e1e9922621579e38}\label{faro__ll_8c_a962144b62958da28e1e9922621579e38}} 
+\index{faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}!free\+\_\+ll@{free\+\_\+ll}}
+\index{free\+\_\+ll@{free\+\_\+ll}!faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}}
+\subsubsection{\texorpdfstring{free\+\_\+ll()}{free\_ll()}}
+{\footnotesize\ttfamily void free\+\_\+ll (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCard}{Card}} $\ast$}]{current\+\_\+node,  }\item[{int}]{size,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+This function takes the head node of the linked list of cards and iteratively frees all the allocated memory from the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+node} & the head node of the linked list \\
+\hline
+{\em size} & the length of the linked list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{faro__ll_8c_aab1abce326d82808b8b4214ce6ce78f5}\label{faro__ll_8c_aab1abce326d82808b8b4214ce6ce78f5}} 
+\index{faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}!get\+\_\+cards\+\_\+numerical@{get\+\_\+cards\+\_\+numerical}}
+\index{get\+\_\+cards\+\_\+numerical@{get\+\_\+cards\+\_\+numerical}!faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+cards\+\_\+numerical()}{get\_cards\_numerical()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCard}{Card}}$\ast$ get\+\_\+cards\+\_\+numerical (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+This function reads in a number of numeric values = to \textquotesingle{}size\textquotesingle{} and returns the head of a linked list of the deck of cards. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & the number of values being read in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{faro__ll_8c_a4109c476de31df2bebcbcdc8aea015ce}\label{faro__ll_8c_a4109c476de31df2bebcbcdc8aea015ce}} 
+\index{faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}!get\+\_\+cards\+\_\+ranksuit@{get\+\_\+cards\+\_\+ranksuit}}
+\index{get\+\_\+cards\+\_\+ranksuit@{get\+\_\+cards\+\_\+ranksuit}!faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+cards\+\_\+ranksuit()}{get\_cards\_ranksuit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCard}{Card}}$\ast$ get\+\_\+cards\+\_\+ranksuit (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+This function reads in a number of rank + suit values = to \textquotesingle{}size\textquotesingle{} and returns the head of a linked list of the deck of cards. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & the number of values being read in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{faro__ll_8c_ae320ca99b8f27f8815fecd35a4d62cb3}\label{faro__ll_8c_ae320ca99b8f27f8815fecd35a4d62cb3}} 
+\index{faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}!get\+Int\+Length@{get\+Int\+Length}}
+\index{get\+Int\+Length@{get\+Int\+Length}!faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}}
+\subsubsection{\texorpdfstring{get\+Int\+Length()}{getIntLength()}}
+{\footnotesize\ttfamily int get\+Int\+Length (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+This function calculates the length of a decimal number. 
+
+It is used to calculate how much memory needs to be mallocd to contain a string for that number
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & is the number being measured \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{faro__ll_8c_ae2a2bc6885382b9cc2599bb23b95ff01}\label{faro__ll_8c_ae2a2bc6885382b9cc2599bb23b95ff01}} 
+\index{faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}!print\+\_\+deck@{print\+\_\+deck}}
+\index{print\+\_\+deck@{print\+\_\+deck}!faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+deck()}{print\_deck()}}
+{\footnotesize\ttfamily void print\+\_\+deck (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCard}{Card}} $\ast$}]{current\+\_\+node,  }\item[{int}]{size,  }\item[{Stringplace}]{prefix }\end{DoxyParamCaption})}
+
+
+
+This function prints the deck of cards when its a linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em deck} & the linked list of Cards being printed \\
+\hline
+{\em size} & the length of the linked list \textquotesingle{}deck\textquotesingle{} \\
+\hline
+{\em prefix} & whether an IN shuffle or O\+UT shuffle was performed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{faro__ll_8c_a8eeb29c39fbff4529fb68b3b7eefa5e3}\label{faro__ll_8c_a8eeb29c39fbff4529fb68b3b7eefa5e3}} 
+\index{faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}!print\+\_\+deck\+\_\+numerical@{print\+\_\+deck\+\_\+numerical}}
+\index{print\+\_\+deck\+\_\+numerical@{print\+\_\+deck\+\_\+numerical}!faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+deck\+\_\+numerical()}{print\_deck\_numerical()}}
+{\footnotesize\ttfamily void print\+\_\+deck\+\_\+numerical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCard}{Card}} $\ast$}]{current\+\_\+node,  }\item[{int}]{size,  }\item[{Stringplace}]{prefix }\end{DoxyParamCaption})}
+
+
+
+This function prints the deck of cards with numerical values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em deck} & the linked list of Cards being printed \\
+\hline
+{\em size} & the length of the linked list \textquotesingle{}deck\textquotesingle{} \\
+\hline
+{\em prefix} & whether an IN shuffle or O\+UT shuffle was performed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{faro__ll_8c_a7826df44bd7325ff77b37f6906c8b3b5}\label{faro__ll_8c_a7826df44bd7325ff77b37f6906c8b3b5}} 
+\index{faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}}
+\subsubsection{\texorpdfstring{shuffle()}{shuffle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCard}{Card}}$\ast$ shuffle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCard}{Card}} $\ast$}]{top\+\_\+ptr,  }\item[{\mbox{\hyperlink{structCard}{Card}} $\ast$}]{bot\+\_\+ptr,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+This function interweaves two equal length linked lists. 
+
+Taking one node from top then from bottom, repeated until the end of the linked lists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & the elements of this linked list will make up the 1st, 3rd etc. elements of the list being returned. \\
+\hline
+{\em bot} & the the elements of this linked list will make up the 2nd, 4th etc. elements of the list being returned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new\+\_\+deck the linked list made by interweaving the top and bot linked lists. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{faro__ll_8c_a868b6862345f68f72b198dc596518a7c}\label{faro__ll_8c_a868b6862345f68f72b198dc596518a7c}} 
+\index{faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}!split@{split}}
+\index{split@{split}!faro\+\_\+ll.\+c@{faro\+\_\+ll.\+c}}
+\subsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCard}{Card}}$\ast$ split (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCard}{Card}} $\ast$}]{deck,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+This function iterates through a linked list and splits it at the halfway point. 
+
+then it returns the bottom half of the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em deck} & the linked list representing the deck of cards. Half of the deck is split into a new linked list. \\
+\hline
+{\em size} & the size of the deck of cards.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bottom\+\_\+half the bottom half of the \textquotesingle{}deck\textquotesingle{} linked list. 
+\end{DoxyReturn}

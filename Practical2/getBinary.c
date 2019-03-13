@@ -1,7 +1,6 @@
 #include <math.h>
 #include <stdlib.h>
-/*
-@brief This function converts a decimal number to its binary representation
+/**@brief This function converts a decimal number to its binary representation
 
 @param number the number "k" that is to be converted
 @param *length an integer point that will contain the length of the binary number

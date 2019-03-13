@@ -1,0 +1,118 @@
+\hypertarget{headers_8h}{}\section{headers.\+h File Reference}
+\label{headers_8h}\index{headers.\+h@{headers.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structCard}{Card}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structCard}{Card}} \mbox{\hyperlink{headers_8h_a23ff27324f1ac52bcafa4cc91e2c2744}{Card}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCard}{Card}} $\ast$ \mbox{\hyperlink{headers_8h_a4109c476de31df2bebcbcdc8aea015ce}{get\+\_\+cards\+\_\+ranksuit}} (int size)
+\begin{DoxyCompactList}\small\item\em This function reads in a number of rank + suit values = to \textquotesingle{}size\textquotesingle{} and returns the head of a linked list of the deck of cards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{headers_8h_a01a5d69622ec6a2e17da6d60c1544808}{faro}} (\mbox{\hyperlink{structCard}{Card}} $\ast$$\ast$deck, int size, int $\ast$k\+\_\+binary, int k\+\_\+length, int k)
+\begin{DoxyCompactList}\small\item\em This function handles the faro shuffle by calling the other functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCard}{Card}} $\ast$ \mbox{\hyperlink{headers_8h_aab1abce326d82808b8b4214ce6ce78f5}{get\+\_\+cards\+\_\+numerical}} (int size)
+\begin{DoxyCompactList}\small\item\em This function reads in a number of numeric values = to \textquotesingle{}size\textquotesingle{} and returns the head of a linked list of the deck of cards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{headers_8h_a4a2826a96793d3582235f48446514ed2}{faro\+\_\+numerical}} (\mbox{\hyperlink{structCard}{Card}} $\ast$$\ast$deck, int size, int $\ast$k\+\_\+binary, int k\+\_\+length)
+\begin{DoxyCompactList}\small\item\em This function handles the faro shuffle by calling the other functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{headers_8h_a23ff27324f1ac52bcafa4cc91e2c2744}\label{headers_8h_a23ff27324f1ac52bcafa4cc91e2c2744}} 
+\index{headers.\+h@{headers.\+h}!Card@{Card}}
+\index{Card@{Card}!headers.\+h@{headers.\+h}}
+\subsubsection{\texorpdfstring{Card}{Card}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structCard}{Card}} \mbox{\hyperlink{structCard}{Card}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{headers_8h_a01a5d69622ec6a2e17da6d60c1544808}\label{headers_8h_a01a5d69622ec6a2e17da6d60c1544808}} 
+\index{headers.\+h@{headers.\+h}!faro@{faro}}
+\index{faro@{faro}!headers.\+h@{headers.\+h}}
+\subsubsection{\texorpdfstring{faro()}{faro()}}
+{\footnotesize\ttfamily void faro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCard}{Card}} $\ast$$\ast$}]{deck,  }\item[{int}]{size,  }\item[{int $\ast$}]{k\+\_\+binary,  }\item[{int}]{k\+\_\+length,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+This function handles the faro shuffle by calling the other functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em deck} & is the deck of cards to be shuffled \\
+\hline
+{\em size} & is the length of the deck \\
+\hline
+{\em k\+\_\+binary} & is the binary representation of the position k specified by the user. \\
+\hline
+{\em k\+\_\+length} & is the length of the binary k\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{headers_8h_a4a2826a96793d3582235f48446514ed2}\label{headers_8h_a4a2826a96793d3582235f48446514ed2}} 
+\index{headers.\+h@{headers.\+h}!faro\+\_\+numerical@{faro\+\_\+numerical}}
+\index{faro\+\_\+numerical@{faro\+\_\+numerical}!headers.\+h@{headers.\+h}}
+\subsubsection{\texorpdfstring{faro\+\_\+numerical()}{faro\_numerical()}}
+{\footnotesize\ttfamily void faro\+\_\+numerical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCard}{Card}} $\ast$$\ast$}]{deck,  }\item[{int}]{size,  }\item[{int $\ast$}]{k\+\_\+binary,  }\item[{int}]{k\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+This function handles the faro shuffle by calling the other functions. 
+
+Used for when the deck has numerical values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em deck} & is the deck of cards to be shuffled \\
+\hline
+{\em size} & is the length of the deck \\
+\hline
+{\em k\+\_\+binary} & is the binary representation of the position k specified by the user. \\
+\hline
+{\em k\+\_\+length} & is the length of the binary k\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{headers_8h_aab1abce326d82808b8b4214ce6ce78f5}\label{headers_8h_aab1abce326d82808b8b4214ce6ce78f5}} 
+\index{headers.\+h@{headers.\+h}!get\+\_\+cards\+\_\+numerical@{get\+\_\+cards\+\_\+numerical}}
+\index{get\+\_\+cards\+\_\+numerical@{get\+\_\+cards\+\_\+numerical}!headers.\+h@{headers.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+cards\+\_\+numerical()}{get\_cards\_numerical()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCard}{Card}}$\ast$ get\+\_\+cards\+\_\+numerical (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+This function reads in a number of numeric values = to \textquotesingle{}size\textquotesingle{} and returns the head of a linked list of the deck of cards. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & the number of values being read in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{headers_8h_a4109c476de31df2bebcbcdc8aea015ce}\label{headers_8h_a4109c476de31df2bebcbcdc8aea015ce}} 
+\index{headers.\+h@{headers.\+h}!get\+\_\+cards\+\_\+ranksuit@{get\+\_\+cards\+\_\+ranksuit}}
+\index{get\+\_\+cards\+\_\+ranksuit@{get\+\_\+cards\+\_\+ranksuit}!headers.\+h@{headers.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+cards\+\_\+ranksuit()}{get\_cards\_ranksuit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCard}{Card}}$\ast$ get\+\_\+cards\+\_\+ranksuit (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+This function reads in a number of rank + suit values = to \textquotesingle{}size\textquotesingle{} and returns the head of a linked list of the deck of cards. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & the number of values being read in. \\
+\hline
+\end{DoxyParams}
