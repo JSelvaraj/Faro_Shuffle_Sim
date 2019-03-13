@@ -112,6 +112,9 @@ void free_ll(Card* current_node, int size, int k) {
   for (int i = 0; i < size; i++) {
     Card* temp = current_node->next;
     if(i == k) {
+       /*the first value should be in position k of the linked list
+       therefore only the value in position k needs to be freed for
+       all the vales to be freed.*/
       free(current_node->value);
     }
     free(current_node);
