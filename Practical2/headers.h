@@ -17,9 +17,9 @@ Card* get_cards_ranksuit(int size);
 void print_deck(Card* deck, int size, Stringplace prefix);
 Card* shuffle(Card* top, Card* bot,int size);
 Card* split(Card* deck, int size);
-void faro(Card** deck,int size, int* k_binary, int k_length);
+void faro(Card** deck,int size, int* k_binary, int k_length, int k);
 int* decToBinary(int number, int* length);
-void free_ll(Card* deck, int size);
+void free_ll(Card* deck, int size, int k);
 
 
 Card* get_cards_numerical(int size);

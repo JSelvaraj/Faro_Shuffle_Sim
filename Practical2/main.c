@@ -28,12 +28,10 @@ int main(int argc, char *argv[]) {
     int* k_binary = decToBinary(pos_k, &k_length);
     if (strncmp(argv[1], "RANKSUIT", 8) == 0 ){
       deck = get_cards_ranksuit(size);
-      faro(&deck, size, k_binary, k_length);
+      faro(&deck, size, k_binary, k_length, pos_k);
     } else if (strncmp(argv[1], "NUMERICAL", 9) == 0 ) {
       deck = get_cards_numerical(size);
       faro_numerical(&deck, size, k_binary, k_length);
     }
-    free_ll(deck, size);
-    free(k_binary);
   }
 }

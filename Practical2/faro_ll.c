@@ -100,6 +100,24 @@ void print_deck(Card* current_node, int size, Stringplace prefix) {
   }
   print_faro_val("", SUFFIX);
 }
+
+/**
+@brief This function takes the head node of the linked list of cards and
+iteratively frees all the allocated memory from the list.
+
+@param current_node the head node of the linked list
+@param size the length of the linked list
+*/
+void free_ll(Card* current_node, int size, int k) {
+  for (int i = 0; i < size; i++) {
+    Card* temp = current_node->next;
+    if(i == k) {
+      free(current_node->value);
+    }
+    free(current_node);
+    current_node = temp;
+  }
+}
 /**
 @brief This function handles the faro shuffle by calling the other
 functions.
@@ -112,7 +130,7 @@ specified by the user.
 
 @return void
 */
-void faro(Card** deck,int size, int* k_binary, int k_length) {
+void faro(Card** deck,int size, int* k_binary, int k_length, int k) {
   Card* bottom_half = NULL;
   for (int i = k_length - 1; i >= 0; i--) {
     bottom_half = split(*deck, size);
@@ -124,49 +142,11 @@ void faro(Card** deck,int size, int* k_binary, int k_length) {
       print_deck(*deck, size, PREFIX_OUT);
     }
   }
-}
-/**
-@brief This function takes the head node of the linked list of cards and
-iteratively frees all the allocated memory from the list.
-
-@param current_node the head node of the linked list
-@param size the length of the linked list
-*/
-void free_ll(Card* current_node, int size) {
-  while (size > 0) {
-    Card* temp = current_node->next;
-    free(current_node);
-    current_node = temp;
-    size--;
-  }
+  free_ll(*deck, size, k);
+  free(k_binary);
 }
 
 
-/**
-@brief This function handles the faro shuffle by calling the other
-functions. Used for when the deck has numerical values.
-
-@param deck is the deck of cards to be shuffled
-@param size is the length of the deck
-@param k_binary is the binary representation of the position k
-specified by the user.
-@param k_length is the length of the binary k
-
-@return void
-*/
-void faro_numerical(Card** deck,int size, int* k_binary, int k_length) {
-  Card* bottom_half = NULL;
-  for (int i = k_length - 1; i >= 0; i--) {
-    bottom_half = split(*deck, size);
-    if (k_binary[i] == 1) {
-      *deck = shuffle(bottom_half, *deck, size);
-      print_deck_numerical(*deck, size, PREFIX_IN);
-    } else {
-      *deck = shuffle(*deck, bottom_half, size);
-      print_deck_numerical(*deck, size, PREFIX_OUT);
-    }
-  }
-}
 /*
 @brief This function prints the deck of cards with numerical values
 
@@ -216,4 +196,29 @@ Card* get_cards_numerical(int size) {
     }
   }
   return head;
+}
+/**
+@brief This function handles the faro shuffle by calling the other
+functions. Used for when the deck has numerical values.
+
+@param deck is the deck of cards to be shuffled
+@param size is the length of the deck
+@param k_binary is the binary representation of the position k
+specified by the user.
+@param k_length is the length of the binary k
+
+@return void
+*/
+void faro_numerical(Card** deck,int size, int* k_binary, int k_length) {
+  Card* bottom_half = NULL;
+  for (int i = k_length - 1; i >= 0; i--) {
+    bottom_half = split(*deck, size);
+    if (k_binary[i] == 1) {
+      *deck = shuffle(bottom_half, *deck, size);
+      print_deck_numerical(*deck, size, PREFIX_IN);
+    } else {
+      *deck = shuffle(*deck, bottom_half, size);
+      print_deck_numerical(*deck, size, PREFIX_OUT);
+    }
+  }
 }
