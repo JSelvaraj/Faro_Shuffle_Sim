@@ -1,5 +1,6 @@
 #include "headers.h"
 
+int* decToBinary(int number, int* length);
 
 int main(int argc, char *argv[]) {
   if (argc < 2 || (strncmp(argv[1], "RANKSUIT", 8) != 0 && strncmp(argv[1], "NUMERICAL", 9) != 0 )) {
@@ -8,7 +9,7 @@ int main(int argc, char *argv[]) {
   }
   int size = 0;
   int pos_k = 0;
-  while (true) {
+  while (1) {
     if (scanf("%d", &size) != 1) {
       printf ("Invalid input\n");
       exit(1);

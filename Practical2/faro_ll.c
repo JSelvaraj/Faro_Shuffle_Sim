@@ -1,4 +1,5 @@
 #include "headers.h"
+#include "files/print_faro_val.h"
 
 /*
 @brief This function reads in a number of rank + suit values = to 'size' and returns the
@@ -121,6 +122,15 @@ void free_ll(Card* current_node, int size, int k) {
     current_node = temp;
   }
 }
+int getIntLength(int n) {
+  int length = 0;
+  while (n > 0) {
+    n = n / 10;
+    length++;
+  }
+  return length;
+}
+
 /**
 @brief This function handles the faro shuffle by calling the other
 functions.

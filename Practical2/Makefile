@@ -7,11 +7,8 @@ main.o: main.c headers.h
 faro_ll.o: faro_ll.c headers.h
 	clang faro_ll.c -c
 
-getBinary.o: getBinary.c headers.h
+getBinary.o: getBinary.c
 	clang getBinary.c -c
 
-getIntLength.o: getIntLength.c headers.h
-	clang getIntLength.c -c
-
 clean:
-	rm *.o faro_shuffle utf
+	rm *.o faro_shuffle
