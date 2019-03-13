@@ -1,4 +1,5 @@
 #include "headers.h"
+#include <assert.h>
 
 int* decToBinary(int number, int* length);
 
@@ -15,14 +16,15 @@ int main(int argc, char *argv[]) {
   int size = 0;
   int pos_k = 0;
   while (1) {
-    if (scanf("%d", &size) != 1) {
+    if (scanf("%d", &size) != 1) { //reads in a size
       printf ("Invalid input\n");
       exit(1);
     }
+    assert(size != 0);
     if (size == -1) {
       break;
     }
-    if (scanf("%d", &pos_k) != 1) {
+    if (scanf("%d", &pos_k) != 1) { // reads in a position
       printf ("Invalid input\n");
       exit(1);
     }
