@@ -1,5 +1,5 @@
-all:main.o faro_ll.o files/print_faro_val.o getBinary.o getIntLength.o
-	clang -lm main.o getBinary.o faro_ll.o getIntLength.o files/print_faro_val.o  -o faro_shuffle
+all:main.o faro_ll.o files/print_faro_val.o getBinary.o
+	clang -lm main.o getBinary.o faro_ll.o files/print_faro_val.o  -o faro_shuffle
 
 main.o: main.c headers.h
 	clang main.c -c
