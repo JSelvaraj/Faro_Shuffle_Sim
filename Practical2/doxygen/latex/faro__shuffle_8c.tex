@@ -1,0 +1,51 @@
+\hypertarget{faro__shuffle_8c}{}\section{faro\+\_\+shuffle.\+c File Reference}
+\label{faro__shuffle_8c}\index{faro\+\_\+shuffle.\+c@{faro\+\_\+shuffle.\+c}}
+{\ttfamily \#include \char`\"{}headers.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{faro__shuffle_8c_a46a4bc2f6ccf9c64ca251383bb5b4b53}{dec\+To\+Binary}} (int number, int $\ast$length)
+\begin{DoxyCompactList}\small\item\em This function converts a decimal number to its binary representation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{faro__shuffle_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em This is the main controlling function of the faro shuffle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{faro__shuffle_8c_a46a4bc2f6ccf9c64ca251383bb5b4b53}\label{faro__shuffle_8c_a46a4bc2f6ccf9c64ca251383bb5b4b53}} 
+\index{faro\+\_\+shuffle.\+c@{faro\+\_\+shuffle.\+c}!dec\+To\+Binary@{dec\+To\+Binary}}
+\index{dec\+To\+Binary@{dec\+To\+Binary}!faro\+\_\+shuffle.\+c@{faro\+\_\+shuffle.\+c}}
+\subsubsection{\texorpdfstring{dec\+To\+Binary()}{decToBinary()}}
+{\footnotesize\ttfamily int$\ast$ dec\+To\+Binary (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{int $\ast$}]{length }\end{DoxyParamCaption})}
+
+
+
+This function converts a decimal number to its binary representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & the number \char`\"{}k\char`\"{} that is to be converted \\
+\hline
+{\em $\ast$length} & an integer point that will contain the length of the binary number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binary number stored in a integer array in reverse format (i.\+e. most significant bit stored last and least significant stored first) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{faro__shuffle_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{faro__shuffle_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{faro\+\_\+shuffle.\+c@{faro\+\_\+shuffle.\+c}!main@{main}}
+\index{main@{main}!faro\+\_\+shuffle.\+c@{faro\+\_\+shuffle.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+This is the main controlling function of the faro shuffle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & should be a minimum of 2 \\
+\hline
+{\em argv\mbox{[}$\,$\mbox{]}} & should contain either the option R\+A\+N\+K\+S\+U\+IT or N\+U\+M\+E\+R\+I\+C\+AL \\
+\hline
+\end{DoxyParams}

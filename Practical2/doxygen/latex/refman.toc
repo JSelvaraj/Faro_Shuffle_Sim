@@ -5,10 +5,11 @@
 \contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}
 \contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}
 \contentsline {section}{\numberline {4.1}Card Struct Reference}{7}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Member Data Documentation}{7}{subsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.1.1}next}{7}{subsubsection.4.1.1.1}
-\contentsline {subsubsection}{\numberline {4.1.1.2}number}{7}{subsubsection.4.1.1.2}
-\contentsline {subsubsection}{\numberline {4.1.1.3}value}{7}{subsubsection.4.1.1.3}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Member Data Documentation}{7}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}next}{7}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}number}{8}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.2.3}value}{8}{subsubsection.4.1.2.3}
 \contentsline {chapter}{\numberline {5}File Documentation}{9}{chapter.5}
 \contentsline {section}{\numberline {5.1}faro\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ll.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}c File Reference}{9}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Function Documentation}{9}{subsection.5.1.1}
@@ -22,20 +23,20 @@
 \contentsline {subsubsection}{\numberline {5.1.1.8}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}deck\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}numerical()}{12}{subsubsection.5.1.1.8}
 \contentsline {subsubsection}{\numberline {5.1.1.9}shuffle()}{12}{subsubsection.5.1.1.9}
 \contentsline {subsubsection}{\numberline {5.1.1.10}split()}{13}{subsubsection.5.1.1.10}
-\contentsline {section}{\numberline {5.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Binary.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}c File Reference}{13}{section.5.2}
+\contentsline {section}{\numberline {5.2}faro\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}shuffle.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}c File Reference}{13}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Function Documentation}{14}{subsection.5.2.1}
 \contentsline {subsubsection}{\numberline {5.2.1.1}dec\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}To\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Binary()}{14}{subsubsection.5.2.1.1}
-\contentsline {section}{\numberline {5.3}headers.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{14}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Typedef Documentation}{15}{subsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.1.1}Card}{15}{subsubsection.5.3.1.1}
-\contentsline {subsection}{\numberline {5.3.2}Function Documentation}{15}{subsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.2.1}faro()}{15}{subsubsection.5.3.2.1}
-\contentsline {subsubsection}{\numberline {5.3.2.2}faro\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}numerical()}{15}{subsubsection.5.3.2.2}
-\contentsline {subsubsection}{\numberline {5.3.2.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cards\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}numerical()}{16}{subsubsection.5.3.2.3}
-\contentsline {subsubsection}{\numberline {5.3.2.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cards\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ranksuit()}{16}{subsubsection.5.3.2.4}
-\contentsline {section}{\numberline {5.4}main.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}c File Reference}{16}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Function Documentation}{17}{subsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.1.1}dec\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}To\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Binary()}{17}{subsubsection.5.4.1.1}
-\contentsline {subsubsection}{\numberline {5.4.1.2}main()}{17}{subsubsection.5.4.1.2}
+\contentsline {subsubsection}{\numberline {5.2.1.2}main()}{14}{subsubsection.5.2.1.2}
+\contentsline {section}{\numberline {5.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Binary.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}c File Reference}{14}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Function Documentation}{15}{subsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.1.1}dec\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}To\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Binary()}{15}{subsubsection.5.3.1.1}
+\contentsline {section}{\numberline {5.4}headers.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{15}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Typedef Documentation}{16}{subsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.1.1}Card}{16}{subsubsection.5.4.1.1}
+\contentsline {subsection}{\numberline {5.4.2}Function Documentation}{16}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}faro()}{16}{subsubsection.5.4.2.1}
+\contentsline {subsubsection}{\numberline {5.4.2.2}faro\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}numerical()}{16}{subsubsection.5.4.2.2}
+\contentsline {subsubsection}{\numberline {5.4.2.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cards\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}numerical()}{17}{subsubsection.5.4.2.3}
+\contentsline {subsubsection}{\numberline {5.4.2.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cards\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ranksuit()}{17}{subsubsection.5.4.2.4}
 \contentsline {section}{\numberline {5.5}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}md File Reference}{17}{section.5.5}
 \contentsline {chapter}{Index}{19}{section*.9}

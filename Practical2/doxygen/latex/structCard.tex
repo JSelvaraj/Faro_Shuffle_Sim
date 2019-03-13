@@ -2,37 +2,57 @@
 \label{structCard}\index{Card@{Card}}
 
 
+this struct represents a single card in a deck of cards.  
+
+
+
+
 {\ttfamily \#include $<$headers.\+h$>$}
 
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-char $\ast$ \mbox{\hyperlink{structCard_a6508919cdf027c25cd243a2074ff7afe}{value}}
-\item 
-unsigned int \mbox{\hyperlink{structCard_a1a5484c5bfff2074ae1c582e9c677333}{number}}
-\item 
-\mbox{\hyperlink{structCard}{Card}} $\ast$ \mbox{\hyperlink{structCard_a67f6ef6c170df8e2bc67cd74e3af714e}{next}}
-\end{DoxyCompactItemize}
+char $\ast$ \mbox{\hyperlink{structCard_a2d649d6bb946578a3677f8919a887dec}{value}}
+\begin{DoxyCompactList}\small\item\em Member value stores the rank and suit ofthe vard being read in. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structCard_a8f209bb3a4387d6904a5f2187b5f1c65}{number}}
+\begin{DoxyCompactList}\small\item\em Member \textquotesingle{}number\textquotesingle{} stores the number if the N\+U\+M\+E\+R\+I\+C\+AL option is chosen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCard}{Card}} $\ast$ \mbox{\hyperlink{structCard_a5420b66c533f4e865e0159614d61d01e}{next}}
+\begin{DoxyCompactList}\small\item\em Member \textquotesingle{}next\textquotesingle{} stores a pointer to the next card in a linked list of Cards. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+this struct represents a single card in a deck of cards. 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{structCard_a67f6ef6c170df8e2bc67cd74e3af714e}\label{structCard_a67f6ef6c170df8e2bc67cd74e3af714e}} 
+\mbox{\Hypertarget{structCard_a5420b66c533f4e865e0159614d61d01e}\label{structCard_a5420b66c533f4e865e0159614d61d01e}} 
 \index{Card@{Card}!next@{next}}
 \index{next@{next}!Card@{Card}}
 \subsubsection{\texorpdfstring{next}{next}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structCard}{Card}}$\ast$ Card\+::next}
+{\footnotesize\ttfamily Card\+::next}
 
-\mbox{\Hypertarget{structCard_a1a5484c5bfff2074ae1c582e9c677333}\label{structCard_a1a5484c5bfff2074ae1c582e9c677333}} 
+
+
+Member \textquotesingle{}next\textquotesingle{} stores a pointer to the next card in a linked list of Cards. 
+
+\mbox{\Hypertarget{structCard_a8f209bb3a4387d6904a5f2187b5f1c65}\label{structCard_a8f209bb3a4387d6904a5f2187b5f1c65}} 
 \index{Card@{Card}!number@{number}}
 \index{number@{number}!Card@{Card}}
 \subsubsection{\texorpdfstring{number}{number}}
-{\footnotesize\ttfamily unsigned int Card\+::number}
+{\footnotesize\ttfamily Card\+::number}
 
-\mbox{\Hypertarget{structCard_a6508919cdf027c25cd243a2074ff7afe}\label{structCard_a6508919cdf027c25cd243a2074ff7afe}} 
+
+
+Member \textquotesingle{}number\textquotesingle{} stores the number if the N\+U\+M\+E\+R\+I\+C\+AL option is chosen. 
+
+\mbox{\Hypertarget{structCard_a2d649d6bb946578a3677f8919a887dec}\label{structCard_a2d649d6bb946578a3677f8919a887dec}} 
 \index{Card@{Card}!value@{value}}
 \index{value@{value}!Card@{Card}}
 \subsubsection{\texorpdfstring{value}{value}}
-{\footnotesize\ttfamily char$\ast$ Card\+::value}
+{\footnotesize\ttfamily Card\+::value}
+
+
+
+Member value stores the rank and suit ofthe vard being read in. 
 
 
 

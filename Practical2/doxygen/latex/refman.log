@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.20)  13 MAR 2019 12:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.20)  13 MAR 2019 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -889,7 +889,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 13.
+(Font)              scaled to size 6.29996pt on input line 14.
  [1
 
 ])
@@ -933,51 +933,55 @@ Chapter 3.
 ]
 Chapter 4.
 (./structCard.tex
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 10.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 7.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 7.
+(Font)              scaled to size 10.79993pt on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 10.79993pt on input line 7.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 10.
+(Font)              scaled to size 10.79993pt on input line 12.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 10.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 22.
+(Font)              scaled to size 8.99994pt on input line 15.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 23.
-) [7] [8
-
-]
+(Font)              scaled to size 8.09995pt on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 16.
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 18.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 18.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 18.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 18.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 30.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 31.
+ [7]) [8]
 Chapter 5.
 (./faro__ll_8c.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 9.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 9.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 9.
-LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 9.
-LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 9.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 35.
-[9]
+[9
+
+]
 Underfull \hbox (badness 10000) detected at line 52
 [][][]
  []
@@ -997,12 +1001,22 @@ Underfull \hbox (badness 10000) detected at line 224
 [][][]
  []
 
-) (./getBinary_8c.tex
+) (./faro__shuffle_8c.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
 [13]
+Underfull \hbox (badness 10000) detected at line 32
+[][][]
+ []
+
+) (./getBinary_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
+[14]
 Underfull \hbox (badness 10000) detected at line 30
 [][][]
  []
@@ -1012,23 +1026,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
-[14]
+[15]
 Underfull \hbox (badness 10000) detected at line 60
 [][][]
  []
 
-[15]
-Underfull \hbox (badness 10000) detected at line 86
-[][][]
- []
-
-) (./main_8c.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
 [16]
-Underfull \hbox (badness 10000) detected at line 31
+Underfull \hbox (badness 10000) detected at line 86
 [][][]
  []
 
@@ -1044,14 +1048,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: C3D2D27809EFA460E34B81E0E6196B32;7274.
+(rerunfilecheck)             Checksum: 0967DA0FB875E56C3676F02B3D3A108F;7515.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  ) 
 Here is how much of TeX's memory you used:
- 14941 strings out of 492671
- 214612 string characters out of 6133225
- 315543 words of memory out of 5000000
- 18462 multiletter control sequences out of 15000+600000
+ 14945 strings out of 492671
+ 214735 string characters out of 6133225
+ 315588 words of memory out of 5000000
+ 18464 multiletter control sequences out of 15000+600000
  66073 words of font info for 85 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  53i,16n,92p,896b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1064,10 +1068,10 @@ rier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (23 pages, 114290 bytes).
+Output written on refman.pdf (23 pages, 116368 bytes).
 PDF statistics:
- 542 PDF objects out of 1000 (max. 8388607)
- 502 compressed objects within 6 object streams
- 113 named destinations out of 1000 (max. 500000)
- 329 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 548 PDF objects out of 1000 (max. 8388607)
+ 508 compressed objects within 6 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

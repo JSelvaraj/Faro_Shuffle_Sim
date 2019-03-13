@@ -1,22 +1,22 @@
 \begin{theindex}
 
   \item {Card}, \hyperpage{7}
-    \subitem {headers.\+h}, \hyperpage{15}
+    \subitem {headers.\+h}, \hyperpage{16}
     \subitem {next}, \hyperpage{7}
     \subitem {number}, \hyperpage{7}
-    \subitem {value}, \hyperpage{7}
+    \subitem {value}, \hyperpage{8}
 
   \indexspace
 
   \item {dec\+To\+Binary}
-    \subitem {get\+Binary.\+c}, \hyperpage{14}
-    \subitem {main.\+c}, \hyperpage{17}
+    \subitem {faro\+\_\+shuffle.\+c}, \hyperpage{14}
+    \subitem {get\+Binary.\+c}, \hyperpage{15}
 
   \indexspace
 
   \item {faro}
     \subitem {faro\+\_\+ll.\+c}, \hyperpage{9}
-    \subitem {headers.\+h}, \hyperpage{15}
+    \subitem {headers.\+h}, \hyperpage{16}
   \item {faro\+\_\+ll.\+c}, \hyperpage{9}
     \subitem {faro}, \hyperpage{9}
     \subitem {faro\+\_\+numerical}, \hyperpage{10}
@@ -30,7 +30,10 @@
     \subitem {split}, \hyperpage{13}
   \item {faro\+\_\+numerical}
     \subitem {faro\+\_\+ll.\+c}, \hyperpage{10}
-    \subitem {headers.\+h}, \hyperpage{15}
+    \subitem {headers.\+h}, \hyperpage{16}
+  \item {faro\+\_\+shuffle.\+c}, \hyperpage{13}
+    \subitem {dec\+To\+Binary}, \hyperpage{14}
+    \subitem {main}, \hyperpage{14}
   \item {free\+\_\+ll}
     \subitem {faro\+\_\+ll.\+c}, \hyperpage{10}
 
@@ -38,31 +41,28 @@
 
   \item {get\+\_\+cards\+\_\+numerical}
     \subitem {faro\+\_\+ll.\+c}, \hyperpage{11}
-    \subitem {headers.\+h}, \hyperpage{16}
+    \subitem {headers.\+h}, \hyperpage{17}
   \item {get\+\_\+cards\+\_\+ranksuit}
     \subitem {faro\+\_\+ll.\+c}, \hyperpage{11}
-    \subitem {headers.\+h}, \hyperpage{16}
-  \item {get\+Binary.\+c}, \hyperpage{13}
-    \subitem {dec\+To\+Binary}, \hyperpage{14}
+    \subitem {headers.\+h}, \hyperpage{17}
+  \item {get\+Binary.\+c}, \hyperpage{14}
+    \subitem {dec\+To\+Binary}, \hyperpage{15}
   \item {get\+Int\+Length}
     \subitem {faro\+\_\+ll.\+c}, \hyperpage{11}
 
   \indexspace
 
-  \item {headers.\+h}, \hyperpage{14}
-    \subitem {Card}, \hyperpage{15}
-    \subitem {faro}, \hyperpage{15}
-    \subitem {faro\+\_\+numerical}, \hyperpage{15}
-    \subitem {get\+\_\+cards\+\_\+numerical}, \hyperpage{16}
-    \subitem {get\+\_\+cards\+\_\+ranksuit}, \hyperpage{16}
+  \item {headers.\+h}, \hyperpage{15}
+    \subitem {Card}, \hyperpage{16}
+    \subitem {faro}, \hyperpage{16}
+    \subitem {faro\+\_\+numerical}, \hyperpage{16}
+    \subitem {get\+\_\+cards\+\_\+numerical}, \hyperpage{17}
+    \subitem {get\+\_\+cards\+\_\+ranksuit}, \hyperpage{17}
 
   \indexspace
 
   \item {main}
-    \subitem {main.\+c}, \hyperpage{17}
-  \item {main.\+c}, \hyperpage{16}
-    \subitem {dec\+To\+Binary}, \hyperpage{17}
-    \subitem {main}, \hyperpage{17}
+    \subitem {faro\+\_\+shuffle.\+c}, \hyperpage{14}
 
   \indexspace
 
@@ -92,6 +92,6 @@
   \indexspace
 
   \item {value}
-    \subitem {Card}, \hyperpage{7}
+    \subitem {Card}, \hyperpage{8}
 
 \end{theindex}

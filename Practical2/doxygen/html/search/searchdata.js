@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "cdfghmnprsv",
   1: "c",
-  2: "fghmr",
+  2: "fghr",
   3: "dfgmps",
   4: "nv",
   5: "c",
