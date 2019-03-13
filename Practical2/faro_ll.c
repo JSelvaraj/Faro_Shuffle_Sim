@@ -101,7 +101,6 @@ void print_deck(Card* current_node, int size, Stringplace prefix) {
   }
   print_faro_val("", SUFFIX);
 }
-
 /**
 @brief This function takes the head node of the linked list of cards and
 iteratively frees all the allocated memory from the list.
@@ -122,6 +121,13 @@ void free_ll(Card* current_node, int size, int k) {
     current_node = temp;
   }
 }
+/**
+@brief This function calculates the length of a decimal number.
+It is used to calculate how much memory needs to be mallocd
+to contain a string for that number
+
+@param n is the number being measured
+*/
 int getIntLength(int n) {
   int length = 0;
   while (n > 0) {
@@ -130,7 +136,6 @@ int getIntLength(int n) {
   }
   return length;
 }
-
 /**
 @brief This function handles the faro shuffle by calling the other
 functions.
@@ -158,8 +163,6 @@ void faro(Card** deck,int size, int* k_binary, int k_length, int k) {
   free_ll(*deck, size, k);
   free(k_binary);
 }
-
-
 /*
 @brief This function prints the deck of cards with numerical values
 
