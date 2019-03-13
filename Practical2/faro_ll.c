@@ -15,7 +15,6 @@ Card* get_cards_ranksuit(int size) {
   Card* current_node;
   Card* new_node;
   while (token != NULL){
-    // printf("%s ", token );
     new_node = malloc(sizeof(Card));
     new_node->value = token;
     new_node->next = NULL;
@@ -29,7 +28,7 @@ Card* get_cards_ranksuit(int size) {
     token = strtok(NULL," ");
     size--;
     if (size == 1) {
-      token = strtok(token,"\n");
+      token = strtok(token,"\n"); // removes newline char from last token
     }
   }
   return head;
@@ -46,11 +45,9 @@ elements of the list being returned.
 @return new_deck the linked list made by interweaving the top and bot linked
 lists.
 */
-Card* shuffle(Card* top, Card* bot, int size) {
-  Card* new_deck = top;
-  Card* current_node = top;
-  Card* top_ptr = top;
-  Card* bot_ptr = bot;
+Card* shuffle(Card* top_ptr, Card* bot_ptr, int size) {
+  Card* new_deck = top_ptr;
+  Card* current_node = top_ptr;
   top_ptr = top_ptr->next;
   current_node->next = bot_ptr;
   current_node = current_node->next;
