@@ -1,2 +1,2 @@
 # Faro_Shuffle_Sim
-Implementing the faro shuffle in c
+This program implements the faro shuffle on a linked list deck of cards.
